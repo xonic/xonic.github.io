@@ -12,4 +12,41 @@
 	img
 	{
 		max-width:100%;
+		height:auto;
+	}
+
+	.img--bleed
+	{
+		padding:0;
+		border:$defaultBorder;
+		border-top-width:1px;
+		border-bottom-width:1px;
+		background:$whiteSmoke;
+
+		img 
+		{
+			display:block;
+			margin:0 auto;
+		}
+	
+		@include with-grid-settings($padding:15px)
+		{
+			@include bleed;
+		}
+
+		@include at-breakpoint($medium-width)
+		{
+			@include with-grid-settings($padding:25px)
+			{
+				@include bleed;
+			}
+		}
+
+		@include at-breakpoint($large-width)
+		{
+			@include with-grid-settings($padding:80px)
+			{
+				@include bleed;
+			}
+		}
 	}

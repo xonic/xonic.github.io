@@ -9,7 +9,7 @@ categories: javascript best-practices
 
 With the introduction of HTML5, JavaScript developers have been blessed with a new customizable and highly flexible HTML tag attribute: the data attribute. Using this attribute to store small chunks of arbitrary data, developers are able to avoid unneccessary AJAX calls and enhance user experience. The W3C specification defines the data attribute as follows:
 
-<figure>
+<figure class="blockquote">
 	<blockquote>
 		A custom data attribute is an attribute in no namespace whose name starts with the string “data-”, has at least one character after the hyphen, is XML-compatible, and contains no uppercase ASCII letters.
 
@@ -19,7 +19,7 @@ With the introduction of HTML5, JavaScript developers have been blessed with a n
 
 		Every HTML element may have any number of custom data attributes specified, with any value.
 	</blockquote>
-	<figcaption><a href="http://www.w3.org/html/wg/drafts/html/master/dom.html#embedding-custom-non-visible-data-with-the-data-*-attributes" title="View source">W3C specification (Editor’s Draft)</a></figcaption>
+	<figcaption class="blockquote__source"><a href="http://www.w3.org/html/wg/drafts/html/master/dom.html#embedding-custom-non-visible-data-with-the-data-*-attributes" title="View source">W3C specification (Editor’s Draft)</a></figcaption>
 </figure>
 
 ## How it should be used
@@ -120,11 +120,11 @@ Well, for one there are performance issues. Measured in percentages, selecting D
 
 Besides the performance issue, what bothers me more is the fact that the data attribute, by definition, is just not intended to be used that way. Remember the W3C definition?
 
-<figure>
+<figure class="blockquote">
 	<blockquote>
 		[...] Custom data attributes are intended to store custom data private to the page or application, for which there are no more appropriate attributes or elements. [...]
 	</blockquote>
-	<figcaption><a href="http://www.w3.org/html/wg/drafts/html/master/dom.html#embedding-custom-non-visible-data-with-the-data-*-attributes" title="View source">W3C specification (Editor’s Draft)</a></figcaption>
+	<figcaption class="blockquote__source"><a href="http://www.w3.org/html/wg/drafts/html/master/dom.html#embedding-custom-non-visible-data-with-the-data-*-attributes" title="View source">W3C specification (Editor’s Draft)</a></figcaption>
 </figure>
 
 That’s it. Nothing more, nothing less. And that is why at the end of the day I don’t feel comfortable with using data attributes to select DOM nodes. Period.

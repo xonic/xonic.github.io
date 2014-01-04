@@ -1,0 +1,40 @@
+//  ---------------------------------------------------------------------------
+//
+//  Defines the layout for the header section
+//
+//  ---------------------------------------------------------------------------
+
+	
+	.l-header
+	{
+		@include rem(padding, $singleSpace * 3 0);
+		background:$whiteSmoke;
+		border:$defaultBorder;
+		@include rem(border-bottom-width, $borderThin);
+	}
+
+
+
+//  ---------------------------------------------------------------------------
+//
+//  Defines the style for the header section
+//
+//  ---------------------------------------------------------------------------
+
+	.branding
+	{
+		display:block;
+		margin:0 auto;
+		text-align:center;
+	}
+
+	.logo
+	{
+		@include rem(width, $singleSpace * 5);
+		@include rem(height, $singleSpace * 5);
+		background:url(../img/logo.svg) top left no-repeat transparent;
+		@include background-size(100% 100%);
+		vertical-align:middle;
+	}
+
+

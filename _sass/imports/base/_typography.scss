@@ -12,12 +12,12 @@
 
 
 
-//  = BOX SIZING
+//  = ACCESSIBILITY
 //  ---------------------------------------------------------------------------
-
-	*
+	
+	.a11y
 	{
-		@include box-sizing(border-box);
+		display:none;
 	}
 
 
@@ -27,11 +27,10 @@
 
 	h1,h2,h3,h4,h5,h6,hgroup,
 	ul,ol,dd,
-	p,figure,
+	p,figure, blockquote,
 	pre,table,fieldset,hr
 	{
-		margin:0;
-		@include rem(margin-bottom, $bodyLineHeight);
+		@include rem(margin, 0 0 $bodyLineHeight);
 	}
 
 
@@ -42,18 +41,28 @@
 
 	html
 	{
-		height:100%;
-		background:#2E3538;
-		font-family:$serifFontFamily;
+		font-family:$baseFontFamily;
 		font-size:$htmlFontSize;
 		line-height:$htmlLineHeight;
+
+		@include at-breakpoint($medium-width)
+		{
+			font-size:68.5%;
+		}
+
+		@include at-breakpoint($large-width)
+		{
+			font-size:75.5%;
+		}
 	}
 
 	body
 	{
 		@include setType($bodyFontSize, $bodyLineHeight);
-		background:$bodyBackground;
+		font-weight:$normalFontWeight;
+		background-color:$bodyBackground;
 		color:$textColor;
+		text-rendering:optimizeLegibility;
 	}
 
 
@@ -94,6 +103,60 @@
 		font-weight:$boldFontWeight;
 	}
 
+	.blockquote
+	{
+		@include rem(margin, 0 0 $doubleSpace);
+		@include rem(padding, $doubleSpace);
+		background:$whiteSmoke;
+		border:$defaultBorder;
+		border-top-width:1px;
+		border-bottom-width:1px;
+		font-style:italic;
+
+		:last-child
+		{
+			margin-bottom:0;
+		}
+	
+		@include with-grid-settings($padding:15px)
+		{
+			@include bleed;
+		}
+
+		@include at-breakpoint($medium-width)
+		{
+			@include with-grid-settings($padding:25px)
+			{
+				@include bleed;
+			}
+		}
+
+		@include at-breakpoint($large-width)
+		{
+			@include with-grid-settings($padding:80px)
+			{
+				@include bleed;
+				position:relative;
+
+				&::before
+				{
+					content:"\"";
+					position:absolute;
+					@include rem(top, $doubleSpace);
+					@include rem(left, $singleSpace);
+					@include rem(font-size, 8.5);
+					line-height:.4;
+					color:$grayVeryLight;
+				}
+			}
+		}
+	}
+
+	.blockquote__source 
+	{
+		font-style:normal;
+	}
+
 
 
 //  = LINKS
@@ -126,13 +189,25 @@
 	
 	ul, ol
 	{
-		@include rem(padding, 0 0 0 $doubleSpace);
-		@include rem(margin-left, -.5);
+		@include rem(margin, 0 0 $doubleSpace 1.9);
+
+		@include at-breakpoint($large-width)
+		{
+			margin-left:0;
+
+			ul, ol
+			{
+				@include rem(margin-left, 1.9);				
+			}
+		}
+
+		padding:0;
+		list-style-type:none;
 	}
 
 	dt
 	{
-		font-family:$baseFontFamily;
+		font-weight:bold;
 	}
 
 
@@ -141,14 +216,11 @@
 //  ---------------------------------------------------------------------------
 	
 	h1, h2, h3, h4, h5, h6,
-	.h1, .h2, .h3, .h4, .h5, .h6,
-	%h1, %h2, %h3, %h4, %h5, %h6
+	.h1, .h2, .h3, .h4, .h5, .h6
 	{
 		font-family:$headingsFontFamily;
 		font-weight:$headingsFontWeight;
 		color:$headingsColor;
-		text-rendering:optimizelegibility;
-		@include hyphens(none);
 
 		small
 		{
@@ -159,80 +231,20 @@
 		}
 	}
 
-	h1, .h1, %h1
+	h1, .h1 { @include setType($h1Size, $h1LineHeight); }
+	h2, .h2 { @include setType($h2Size, $h2LineHeight); }
+	h3, .h3 { @include setType($h3Size, $h3LineHeight); }
+	h4, .h4 { @include setType($h5Size, $h5LineHeight); }
+	h5, .h5 { @include setType($h5Size, $h5LineHeight); }
+	h6, .h6 { @include setType($h6Size, $h6LineHeight); }
+
+	.post
 	{
-		@include setType($h1Size, $h1LineHeight);
-	}
-
-	h2, .h2, %h2
-	{
-		@include setType($h2Size, $h2LineHeight);
-	}
-
-	h3, .h3, %h3
-	{
-		@include setType($h3Size, $h3LineHeight);
-	}
-
-	h4, .h4, %h4
-	{
-		@include setType($h4Size, $h4LineHeight);
-	}
-
-	.h--emphasized,
-	%h--emphasized
-	{
-		@extend %bottom-separator;
-		@extend .space-lover;
-	}
-
-
-
-//	= STRONG HEADINGS
-//	---------------------------------------------------------------------------
-
-	.h--strong
-	{
-		border-bottom:0 solid $separatorColor;
-		@include rem(border-bottom-width, $borderThick);
-
-		@include rem(padding-bottom, $singleSpace - $borderThick);
-		@include rem(margin-bottom, $singleSpace * 2);
-
-		height: $singleSpace;
-		@include rem(font-size, 4.2);
-
-		@include at-breakpoint($large-width)
+		h2, h3, h4, h5, h6,
+		.h2, .h3, .h4, .h5, .h6
 		{
-			@include rem(padding-bottom, $singleSpace * 2 - $borderThick);
-			@include rem(margin-bottom, $singleSpace * 4);
-			@include rem(font-size, 7.2);
-			@include rem(line-height, $singleSpace * 4);
+			@include rem(margin-top, $doubleSpace * 2);
 		}
 	}
 
-
-
-//  = CODE
-//  ---------------------------------------------------------------------------
-
-	code 
-	{
-		padding:0 1px;
-
-		@include background($whiteSmoke);
-		border-radius:50%;
-	}
-
-
-
-// 	= BLOCKQUOTE
-//	----------------------------------------------------------------------------
-
-	blockquote,
-	.is-emphasized
-	{
-		@include rem(margin, 0 0 $doubleSpace);
-		@extend %left-separator;
-	}
 

@@ -28,25 +28,24 @@
 //  = ACCENT COLORS
 //  ---------------------------------------------------------------------------
 
-	$red:								#e05a5a; // intuio red
-	$green:								#bfe05a;
-	$blue: 								#3890bd;
-	$magenta:							#ea4c88;
+	$red:								#be2e0b;
+	$green:								#9aaa05;
+	$blue: 								#0B74BE;
+	$magenta:							#be0bb1;
 	$purple:							#939;
 	$cyan:								#6cc;
 	$yellow:							#fff2bf;
-	$orange:							#f90;
+	$orange:							#be880b;
 			
 	$primaryAccent:						$blue;
-	$secondaryAccent:					$red;
+	$secondaryAccent:					$orange;
 
 
 
 //  = SCAFFOLDING
 //  ---------------------------------------------------------------------------
 
-	$bodyBackground:					$sand;
-	$bodyBackgroundColor:				$sand;
+	$bodyBackground:					$white;
 	$textColor:							$grayVeryDark;
 
 
@@ -54,7 +53,7 @@
 //  = LINKS
 //  ---------------------------------------------------------------------------
 
-	$linkColor:							$secondaryAccent;
+	$linkColor:							$primaryAccent;
 	$linkColorHover:					darken($linkColor, 8);
 	$linkColorVisited:					darken($linkColor, 16%);
 	$linkColorInvisible:				$textColor;	
@@ -64,44 +63,51 @@
 //  = TYPOGRAPHY
 //  ---------------------------------------------------------------------------
 
-	$sansFontFamily:        			"proxima-nova", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-	$serifFontFamily:       			"ff-meta-serif-web-pro", "Georgia", "Geneva", "Times New Roman", serif;
+	$sansFontFamily:        			"freight-sans-pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+	$serifFontFamily:       			"chaparral-pro", "Georgia", "Geneva", "Times New Roman", serif;
 	$monoFontFamily:        			"Menlo", "Monaco", "Consolas", "Courier New", monospace;
 			
 	$htmlFontSize:          			62.5%;	
 	$htmlLineHeight:        			1;
-	$baseLineHeight:					1.4;//px
-	$bodyFontSize:          			1.8;//px
+	$baseLineHeight:					1.2;//px
+	$bodyFontSize:          			1.7;//px
 	$bodyLineHeight:        			$baseLineHeight * 2;
-	$baseFontFamily:        			$serifFontFamily;
-	$altFontFamily:         			$sansFontFamily;
+	$baseFontFamily:        			$sansFontFamily;
+	$altFontFamily:         			$serifFontFamily;
 			
 	$smallFontSize:						$baseLineHeight - 0.2;
 
 	$normalFontWeight:					400;
-	$boldFontWeight:					700;
+	$boldFontWeight:					600;
 
-	$headingsFontFamily:    			$sansFontFamily; 	// empty to use BS default, $baseFontFamily
-	$headingsFontWeight:    			700;	 			// same as browser default, bold
-	$headingsColor:         			inherit;			// empty to use BS default, $textColor
+	$headingsFontFamily:    			$sansFontFamily;
+	$headingsFontWeight:    			$normalFontWeight;
+	$headingsColor:         			inherit;
 			
-	$h1Size:							4.2;//px
-	$h1LineHeight:						4.2;//px
-			
-	$h2Size:							3.4;//px
-	$h2LineHeight:						4.2;//px
-				
-	$h3Size:							2.6;//px
-	$h3LineHeight:						2.8;//px
-			
-	$h4Size:							2.1;//px
-	$h4LineHeight:						2.8;//px
+	$h1Size:							3.2;
+	$h1LineHeight:						3.6;
+
+	$h2Size:							2.8;
+	$h2LineHeight:						3.6;
+	
+	$h3Size:							2.2;
+	$h3LineHeight:						2.4;
+
+	$h4Size:							1.8;
+	$h4LineHeight:						2.4;
+
+	$h5Size:							1.8;
+	$h5LineHeight:						2.4;
+
+	$h6Size:							1.8;
+	$h6LineHeight:						2.4;
 
 
 
 //  = BORDERS
 //  ---------------------------------------------------------------------------
 
+	$defaultBorder:						0 dashed $grayVeryLight;
 	$borderRadius:						.2;//px
 	$borderThin:						.1;//px
 	$borderMedium:						.2;//px
@@ -115,6 +121,7 @@
 
 	$singleSpace:						$baseLineHeight;
 	$doubleSpace:						$singleSpace * 2;
+	$quadrupleSpace:					$doubleSpace * 2;
 	$touchSize:							$singleSpace * 3;
 
 
