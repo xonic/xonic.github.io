@@ -1,0 +1,35 @@
+---
+layout: default
+title: xon1c · thoughts
+styles: index
+script: index
+---
+
+  <ol>
+
+    {% for post in site.posts %}
+
+      <li>
+
+        <time datetime="{{ post.date }}">
+
+          <!-- Whitespace added for readability -->
+          {% assign d = post.date | date: "%-d"  %}
+          {{ post.date | date: "%B" }} 
+          {% case d %}
+            {% when '1' or '21' or '31' %}{{ d }}st, 
+            {% when '2' or '22' %}{{ d }}nd, 
+            {% when '3' or '23' %}{{ d }}rd, 
+            {% else %}{{ d }}th, 
+            {% endcase %}
+          {{ post.date | date: "%Y" }}
+
+        </time>
+        
+        <h2><a href="{{ post.url }}" title="read article">{{ post.title }}</a></h2>
+
+      </li>
+
+    {% endfor %}
+
+  </ol>
