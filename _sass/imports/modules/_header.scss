@@ -44,6 +44,8 @@
 	.nav-main
 	{
 		@extend .cf;
+		font-family:$serifFontFamily;
+		@include rem(font-size, $h3Size);
 	}
 
 	.nav-main__home,

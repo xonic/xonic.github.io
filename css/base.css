@@ -1001,19 +1001,26 @@ img {
   vertical-align: middle;
 }
 
-/* line 52, ../_sass/imports/modules/_header.scss */
+/* line 45, ../_sass/imports/modules/_header.scss */
+.nav-main {
+  font-family: "bree-serif", "Georgia", "Geneva", "Times New Roman", serif;
+  font-size:  22px;
+  font-size:  2.2rem;
+}
+
+/* line 54, ../_sass/imports/modules/_header.scss */
 .nav-main__home,
 .touch .nav-main__home:active,
 .no-touch .nav-main__home:hover {
   border: 0 none;
 }
 
-/* line 57, ../_sass/imports/modules/_header.scss */
+/* line 59, ../_sass/imports/modules/_header.scss */
 .nav-main__home {
   float: left;
 }
 
-/* line 62, ../_sass/imports/modules/_header.scss */
+/* line 64, ../_sass/imports/modules/_header.scss */
 .nav-main__items {
   float: right;
   height:  60px;
@@ -1023,7 +1030,7 @@ img {
   line-height:  6rem;
 }
 
-/* line 70, ../_sass/imports/modules/_header.scss */
+/* line 72, ../_sass/imports/modules/_header.scss */
 .nav-main__item {
   display: inline-block;
   margin-left:  24px;
@@ -1031,12 +1038,12 @@ img {
   line-height: normal;
   vertical-align: middle;
 }
-/* line 77, ../_sass/imports/modules/_header.scss */
+/* line 79, ../_sass/imports/modules/_header.scss */
 .nav-main__item:first-child {
   margin-left: 0;
 }
 
-/* line 85, ../_sass/imports/modules/_header.scss */
+/* line 87, ../_sass/imports/modules/_header.scss */
 .nav-main__link--active,
 .touch .nav-main__link--active:active,
 .no-touch .nav-main__link--active:hover {
