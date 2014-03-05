@@ -1,0 +1,42 @@
+//  ---------------------------------------------------------------------------
+//	
+//	The tagline
+//
+//  ---------------------------------------------------------------------------	
+
+
+
+//	= COLORS
+//  ---------------------------------------------------------------------------
+
+	$taglineColor:			$textColor;
+	$subtaglineColor:		$blueLight;
+
+
+
+//  = PANEL
+//  ---------------------------------------------------------------------------
+
+	.tagline,
+	.subtagline
+	{
+		font-family:$serifFontFamily;
+		text-align:center;
+	}
+
+	.tagline 
+	{
+		@include rem(margin-bottom, $singleSpace);
+		@include rem(font-size, $baseLineHeight * 6);
+		line-height:1;
+		font-weight:bold;
+		color:$taglineColor;
+	}
+
+	.subtagline
+	{
+		@include rem(margin-bottom, $doubleSpace * 2);
+		@include rem(font-size, $h2Size);
+		line-height:1.6;
+		color:$subtaglineColor;
+	}

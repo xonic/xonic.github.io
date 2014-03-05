@@ -1377,3 +1377,31 @@ img {
 .open > .btn-dropdown__menu {
   display: block;
 }
+
+/* line 22, ../_sass/imports/modules/_tagline.scss */
+.tagline,
+.subtagline {
+  font-family: "bree-serif", "Georgia", "Geneva", "Times New Roman", serif;
+  text-align: center;
+}
+
+/* line 28, ../_sass/imports/modules/_tagline.scss */
+.tagline {
+  margin-bottom:  12px;
+  margin-bottom:  1.2rem;
+  font-size:  72px;
+  font-size:  7.2rem;
+  line-height: 1;
+  font-weight: bold;
+  color: #3f4349;
+}
+
+/* line 37, ../_sass/imports/modules/_tagline.scss */
+.subtagline {
+  margin-bottom:  48px;
+  margin-bottom:  4.8rem;
+  font-size:  28px;
+  font-size:  2.8rem;
+  line-height: 1.6;
+  color: #49b0e3;
+}
