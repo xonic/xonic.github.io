@@ -1,3 +1,11 @@
 name: xon1c · Thomas Nägele's thoughts and work
 markdown: redcarpet
 pygments: true
+
+# Setup page navigation
+navigation:
+- text: Work
+  url: /work/
+- text: Articles
+  url: /articles/
+  layout: post
