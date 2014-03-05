@@ -30,15 +30,20 @@
 
 	$red:								#be2e0b;
 	$green:								#9aaa05;
-	$blue: 								#0B74BE;
+	$blue: 								#314e78;
+	$blueLight:							#49B0E3;
+	$blueVeryDark:						#3F4349;
 	$magenta:							#be0bb1;
 	$purple:							#939;
 	$cyan:								#6cc;
 	$yellow:							#fff2bf;
-	$orange:							#be880b;
+	$orange:							#ff7d26;
+	$orangeLight:						#ff9c59;
+	$orangeDark:						#ce6824;
+	$gold:								#BB9769;
 			
-	$primaryAccent:						$blue;
-	$secondaryAccent:					$orange;
+	$primaryAccent:						$orange;
+	$secondaryAccent:					$blue;
 
 
 
@@ -46,16 +51,16 @@
 //  ---------------------------------------------------------------------------
 
 	$bodyBackground:					$white;
-	$textColor:							$grayVeryDark;
+	$textColor:							$blueVeryDark;
 
 
 
 //  = LINKS
 //  ---------------------------------------------------------------------------
 
-	$linkColor:							$primaryAccent;
+	$linkColor:							$gold;
 	$linkColorHover:					darken($linkColor, 8);
-	$linkColorVisited:					darken($linkColor, 16%);
+	$linkColorVisited:					$orangeDark;
 	$linkColorInvisible:				$textColor;	
 
 
@@ -64,7 +69,7 @@
 //  ---------------------------------------------------------------------------
 
 	$sansFontFamily:        			"freight-sans-pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-	$serifFontFamily:       			"chaparral-pro", "Georgia", "Geneva", "Times New Roman", serif;
+	$serifFontFamily:       			"bree-serif", "Georgia", "Geneva", "Times New Roman", serif;
 	$monoFontFamily:        			"Menlo", "Monaco", "Consolas", "Courier New", monospace;
 			
 	$htmlFontSize:          			62.5%;	
@@ -78,9 +83,9 @@
 	$smallFontSize:						$baseLineHeight - 0.2;
 
 	$normalFontWeight:					400;
-	$boldFontWeight:					600;
+	$boldFontWeight:					700;
 
-	$headingsFontFamily:    			$sansFontFamily;
+	$headingsFontFamily:    			$serifFontFamily;
 	$headingsFontWeight:    			$normalFontWeight;
 	$headingsColor:         			inherit;
 			

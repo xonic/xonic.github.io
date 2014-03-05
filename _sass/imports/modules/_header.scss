@@ -7,10 +7,21 @@
 	
 	.l-header
 	{
-		@include rem(padding, $singleSpace * 3 0);
-		background:$whiteSmoke;
+		// @include rem(padding, $singleSpace * 3 0);
+		// background:$secondaryAccent;
 		border:$defaultBorder;
 		@include rem(border-bottom-width, $borderThin);
+
+		.grid 
+		{
+			border-color:transparent;
+		}
+
+		.grid__inner
+		{
+			@include rem(padding-top, $doubleSpace);
+			@include rem(padding-bottom, $doubleSpace);
+		}
 	}
 
 
@@ -21,13 +32,6 @@
 //
 //  ---------------------------------------------------------------------------
 
-	.branding
-	{
-		display:block;
-		margin:0 auto;
-		text-align:center;
-	}
-
 	.logo
 	{
 		@include rem(width, $singleSpace * 5);
@@ -36,5 +40,63 @@
 		@include background-size(100% 100%);
 		vertical-align:middle;
 	}
+
+	.nav-main
+	{
+		@extend .cf;
+	}
+
+	.nav-main__home,
+	.touch .nav-main__home:active,
+	.no-touch .nav-main__home:hover
+	{
+		border:0 none;
+	}
+
+	.nav-main__home
+	{
+		float:left;
+	}
+
+	.nav-main__items
+	{
+		float:right;
+		@include rem(height, $singleSpace * 5);
+		margin:0;
+		@include rem(line-height, $singleSpace * 5);
+	}
+
+	.nav-main__item
+	{
+		display:inline-block;
+		@include rem(margin-left, $doubleSpace);
+		line-height:normal;
+		vertical-align:middle;
+
+		&:first-child
+		{
+			margin-left:0;
+		}
+	}
+
+	.nav-main__link--active,
+	.touch .nav-main__link--active:active,
+	.no-touch .nav-main__link--active:hover
+	{
+		border:transparent;
+		color:$textColor;
+		cursor:default;
+	}
+
+
+
+
+
+
+
+
+
+
+
 
 

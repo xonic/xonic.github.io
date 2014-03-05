@@ -8,4 +8,5 @@ navigation:
   url: /work/
 - text: Articles
   url: /articles/
+  real_url: /articles/index.html
   layout: post

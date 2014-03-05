@@ -82,19 +82,19 @@
 
 	::-webkit-selection 
 	{
-	    background-color:$primaryAccent;
+	    background-color:$blueLight;
 	    color:$white;
 	}
 
 	::-moz-selection 
 	{
-	    background-color:$primaryAccent;
+	    background-color:$blueLight;
 	    color:$white;
 	}
 
 	::selection 
 	{
-	    background-color:$primaryAccent;
+	    background-color:$blueLight;
 	    color:$white;
 	}
 
@@ -164,22 +164,18 @@
 	
 	a
 	{
-		padding:0 1px;
-
+		border-bottom:1px solid hsl(hue($linkColor), 5%, 95%);
 		text-decoration:none;
 		color:$linkColor;
 		cursor:pointer;
-
-		@include transition(all);
-		@include transition-duration(.1s);
+		@include transition(border-color .2s linear);
 	}
 
+	a:hover,
 	.no-touch a:hover,
 	.touch a:active
 	{
-		background-color:$linkColor;
-		text-decoration:none;
-		color:$white;
+		border-bottom-color:$linkColor;
 	}
 	
 
@@ -208,6 +204,12 @@
 	dt
 	{
 		font-weight:bold;
+	}
+
+	.list
+	{
+		margin:0;
+		padding:0;
 	}
 
 
