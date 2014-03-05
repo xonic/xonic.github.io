@@ -169,6 +169,7 @@
 		color:$linkColor;
 		cursor:pointer;
 		@include transition(border-color .2s linear);
+		-webkit-tap-highlight-color:rgba(0,0,0,0);
 	}
 
 	a:hover,

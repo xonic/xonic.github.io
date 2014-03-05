@@ -778,16 +778,17 @@ a {
   -moz-transition: border-color 0.2s linear;
   -o-transition: border-color 0.2s linear;
   transition: border-color 0.2s linear;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
-/* line 177, ../_sass/imports/base/_typography.scss */
+/* line 178, ../_sass/imports/base/_typography.scss */
 a:hover,
 .no-touch a:hover,
 .touch a:active {
   border-bottom-color: #bb9769;
 }
 
-/* line 187, ../_sass/imports/base/_typography.scss */
+/* line 188, ../_sass/imports/base/_typography.scss */
 ul, ol {
   margin:  0 0 24px 19px;
   margin:  0 0 2.4rem 1.9rem;
@@ -795,36 +796,36 @@ ul, ol {
   list-style-type: none;
 }
 @media (min-width: 37.5em) {
-  /* line 187, ../_sass/imports/base/_typography.scss */
+  /* line 188, ../_sass/imports/base/_typography.scss */
   ul, ol {
     margin-left: 0;
   }
-  /* line 195, ../_sass/imports/base/_typography.scss */
+  /* line 196, ../_sass/imports/base/_typography.scss */
   ul ul, ul ol, ol ul, ol ol {
     margin-left:  19px;
     margin-left:  1.9rem;
   }
 }
 
-/* line 205, ../_sass/imports/base/_typography.scss */
+/* line 206, ../_sass/imports/base/_typography.scss */
 dt {
   font-weight: bold;
 }
 
-/* line 210, ../_sass/imports/base/_typography.scss */
+/* line 211, ../_sass/imports/base/_typography.scss */
 .list {
   margin: 0;
   padding: 0;
 }
 
-/* line 222, ../_sass/imports/base/_typography.scss */
+/* line 223, ../_sass/imports/base/_typography.scss */
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   font-family: "bree-serif", "Georgia", "Geneva", "Times New Roman", serif;
   font-weight: 400;
   color: inherit;
 }
-/* line 228, ../_sass/imports/base/_typography.scss */
+/* line 229, ../_sass/imports/base/_typography.scss */
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small,
 .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small {
   display: block;
@@ -833,7 +834,7 @@ h1 small, h2 small, h3 small, h4 small, h5 small, h6 small,
   color: #949494;
 }
 
-/* line 236, ../_sass/imports/base/_typography.scss */
+/* line 237, ../_sass/imports/base/_typography.scss */
 h1, .h1 {
   font-size:  32px;
   font-size:  3.2rem;
@@ -841,7 +842,7 @@ h1, .h1 {
   line-height:  3.6rem;
 }
 
-/* line 237, ../_sass/imports/base/_typography.scss */
+/* line 238, ../_sass/imports/base/_typography.scss */
 h2, .h2 {
   font-size:  28px;
   font-size:  2.8rem;
@@ -849,7 +850,7 @@ h2, .h2 {
   line-height:  3.6rem;
 }
 
-/* line 238, ../_sass/imports/base/_typography.scss */
+/* line 239, ../_sass/imports/base/_typography.scss */
 h3, .h3 {
   font-size:  22px;
   font-size:  2.2rem;
@@ -857,7 +858,7 @@ h3, .h3 {
   line-height:  2.4rem;
 }
 
-/* line 239, ../_sass/imports/base/_typography.scss */
+/* line 240, ../_sass/imports/base/_typography.scss */
 h4, .h4 {
   font-size:  18px;
   font-size:  1.8rem;
@@ -865,7 +866,7 @@ h4, .h4 {
   line-height:  2.4rem;
 }
 
-/* line 240, ../_sass/imports/base/_typography.scss */
+/* line 241, ../_sass/imports/base/_typography.scss */
 h5, .h5 {
   font-size:  18px;
   font-size:  1.8rem;
@@ -873,7 +874,7 @@ h5, .h5 {
   line-height:  2.4rem;
 }
 
-/* line 241, ../_sass/imports/base/_typography.scss */
+/* line 242, ../_sass/imports/base/_typography.scss */
 h6, .h6 {
   font-size:  18px;
   font-size:  1.8rem;
@@ -881,14 +882,14 @@ h6, .h6 {
   line-height:  2.4rem;
 }
 
-/* line 247, ../_sass/imports/base/_typography.scss */
+/* line 248, ../_sass/imports/base/_typography.scss */
 .post h2, .post h3, .post h4, .post h5, .post h6,
 .post .h2, .post .h3, .post .h4, .post .h5, .post .h6 {
   margin-top:  48px;
   margin-top:  4.8rem;
 }
 
-/* line 259, ../_sass/imports/base/_typography.scss */
+/* line 260, ../_sass/imports/base/_typography.scss */
 pre,
 code {
   font-family: "Menlo", "Monaco", "Consolas", "Courier New", monospace;
@@ -911,7 +912,7 @@ code {
   hyphens: none;
 }
 @media (min-width: 37.5em) {
-  /* line 259, ../_sass/imports/base/_typography.scss */
+  /* line 260, ../_sass/imports/base/_typography.scss */
   pre,
   code {
     line-height: 1.8;
