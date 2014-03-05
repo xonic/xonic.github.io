@@ -248,3 +248,51 @@
 	}
 
 
+
+//  = CODE
+//  ---------------------------------------------------------------------------
+	
+	pre,
+	code 
+	{
+		font-family:$monoFontFamily;
+		@include setType(1.4, 1.5);
+		color:$textColor;
+		text-shadow:0 1px white;
+		direction:ltr;
+		text-align:left;
+		white-space:pre;
+		word-spacing:normal;
+
+		-moz-tab-size: 4;
+		-o-tab-size: 4;
+		tab-size: 4;
+
+		-webkit-hyphens: none;
+		-moz-hyphens: none;
+		-ms-hyphens: none;
+		hyphens: none;
+
+		@include at-breakpoint($large-width)
+		{
+			line-height:1.8;
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

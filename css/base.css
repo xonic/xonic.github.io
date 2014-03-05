@@ -886,6 +886,36 @@ h6, .h6 {
   margin-top:  4.8rem;
 }
 
+/* line 257, ../_sass/imports/base/_typography.scss */
+pre,
+code {
+  font-family: "Menlo", "Monaco", "Consolas", "Courier New", monospace;
+  font-size:  14px;
+  font-size:  1.4rem;
+  line-height:  15px;
+  line-height:  1.5rem;
+  color: #4d4d4d;
+  text-shadow: 0 1px white;
+  direction: ltr;
+  text-align: left;
+  white-space: pre;
+  word-spacing: normal;
+  -moz-tab-size: 4;
+  -o-tab-size: 4;
+  tab-size: 4;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -ms-hyphens: none;
+  hyphens: none;
+}
+@media (min-width: 37.5em) {
+  /* line 257, ../_sass/imports/base/_typography.scss */
+  pre,
+  code {
+    line-height: 1.8;
+  }
+}
+
 /* line 13, ../_sass/imports/base/_images.scss */
 img {
   max-width: 100%;
