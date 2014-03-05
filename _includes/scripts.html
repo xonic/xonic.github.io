@@ -4,9 +4,15 @@
 	document.addEventListener("touchstart", function() {});
 
 	// Check if browser supports touch events
-	(('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch) ?
-		document.querySelector("html").classList.add("touch") :
+	if(('ontouchstart' in window) || window.DocumentTouch && document instanceof DocumentTouch)
+	{
+		document.querySelector("html").classList.add("touch");
+		document.addEventListener("DOMContentLoaded", function() { document.click(); });
+	}
+	else
+	{
 		document.querySelector("html").classList.add("no-touch");
+	}
 
 </script>
 <!-- RequireJS 
