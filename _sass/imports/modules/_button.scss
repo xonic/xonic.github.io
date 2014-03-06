@@ -34,8 +34,8 @@
 		background-color:$btnBackgroundColorDark;
 		@include background(linear-gradient($btnBackgroundColorLight, $btnBackgroundColorDark));
 		
-		font-family:$headingsFontFamily;
-		font-weight:$headingsFontWeight;
+		font-family:$sansFontFamily;
+		font-weight:$normalFontWeight;
 		@include rem(font-size, $bodyFontSize);
 		text-align:center;
 		vertical-align:baseline;
@@ -93,8 +93,8 @@
 
 	.btn--large
 	{
-		@include rem(padding, $bodyLineHeight - $btnBorderWidth $doubleSpace);
-		@include rem(font-size, $h4Size);
+		@include rem(padding, $singleSpace - $btnBorderWidth $doubleSpace);
+		@include rem(font-size, $h3Size);
 	}
 
 	.btn--huge
@@ -121,7 +121,7 @@
 //  ---------------------------------------------------------------------------
 
 	// Change these
-	$btnPrimaryBaseColor:				$primaryAccent;
+	$btnPrimaryBaseColor:				$gold;//#f79618;
 	$btnPrimaryColor:					$white;
 	
 	// Don't change these
@@ -135,6 +135,7 @@
 		background:$btnPrimaryBackgroundColorDark;
 		@include background(linear-gradient($btnPrimaryBackgroundColorLight, $btnPrimaryBackgroundColorDark));
 		color:$btnPrimaryColor;
+		text-shadow:1px 1px darken($btnPrimaryBackgroundColorDark, 5%);
 	}
 
 	.no-touch .btn--primary:hover 

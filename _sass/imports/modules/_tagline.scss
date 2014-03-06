@@ -1,6 +1,6 @@
 //  ---------------------------------------------------------------------------
 //	
-//	The tagline
+//	The tagline module
 //
 //  ---------------------------------------------------------------------------	
 
@@ -9,7 +9,7 @@
 //	= COLORS
 //  ---------------------------------------------------------------------------
 
-	$taglineColor:			$textColor;
+	$taglineColor:			$blueVeryDark;
 	$subtaglineColor:		$blueLight;
 
 
@@ -35,8 +35,13 @@
 
 	.subtagline
 	{
-		@include rem(margin-bottom, $doubleSpace * 2);
+		// @include rem(margin-bottom, $doubleSpace * 2);
 		@include rem(font-size, $h2Size);
-		line-height:1.6;
+		line-height:1.2;
 		color:$subtaglineColor;
+
+		@include at-breakpoint($large-width)
+		{
+			line-height:1.6;
+		}
 	}

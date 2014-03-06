@@ -1,0 +1,50 @@
+//  ---------------------------------------------------------------------------
+//
+//  Defines the layout for the footer section
+//
+//  ---------------------------------------------------------------------------
+
+	
+	.l-footer
+	{
+		border:$defaultBorder;
+		@include rem(border-top-width, $borderThin);
+		background:$blueVeryDark;
+		color:hsl(hue($blueVeryDark), 15%, 75%);
+
+		.grid 
+		{
+			border-color:transparent;
+		}
+
+		.grid__inner
+		{
+			@include rem(padding-top, $doubleSpace);
+			@include rem(padding-bottom, $doubleSpace);
+		}
+	}
+
+	.touch .l-footer,
+	.no-touch .l-footer
+	{
+		a
+		{
+			border-bottom-color:lighten($blueVeryDark, 10%);
+		}
+	}
+
+	.touch .l-footer a:active,
+	.no-touch .l-footer a:hover
+	{
+		border-bottom-color:$linkColor;
+	}
+
+
+
+//  ---------------------------------------------------------------------------
+//
+//  Defines the style for the footer section
+//
+//  ---------------------------------------------------------------------------
+
+	

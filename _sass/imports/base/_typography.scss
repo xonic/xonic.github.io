@@ -82,19 +82,19 @@
 
 	::-webkit-selection 
 	{
-	    background-color:$blueLight;
+	    background-color:$gold;
 	    color:$white;
 	}
 
 	::-moz-selection 
 	{
-	    background-color:$blueLight;
+	    background-color:$gold;
 	    color:$white;
 	}
 
 	::selection 
 	{
-	    background-color:$blueLight;
+	    background-color:$gold;
 	    color:$white;
 	}
 
@@ -159,12 +159,32 @@
 
 
 
+//  = TEXT ALIGNMENT
+//  ---------------------------------------------------------------------------
+
+	.text--left
+	{
+		text-align:left;
+	}
+
+	.text--center
+	{
+		text-align:center;
+	}
+
+	.text--right
+	{
+		text-align:right;
+	}
+
+
+
 //  = LINKS
 //  ---------------------------------------------------------------------------
 	
 	a
 	{
-		border-bottom:1px solid hsl(hue($linkColor), 5%, 95%);
+		border-bottom:1px solid hsl(hue($linkColor), 9%, 88%);
 		text-decoration:none;
 		color:$linkColor;
 		cursor:pointer;
