@@ -17,8 +17,13 @@
 
 		.grid__inner
 		{
-			@include rem(padding-top, $doubleSpace);
-			@include rem(padding-bottom, $doubleSpace);
+			@include rem(padding-bottom, $singleSpace * 2);
+			@include rem(font-size, $smallFontSize);
+
+			@include at-breakpoint($large-width)
+			{
+				@include rem(padding-bottom, $singleSpace * 3);
+			}
 		}
 	}
 
@@ -37,12 +42,91 @@
 		border-bottom-color:$linkColor;
 	}
 
+	.about-me
+	{
+		@extend .cf;
+	}
 
 
-//  ---------------------------------------------------------------------------
-//
-//  Defines the style for the footer section
-//
-//  ---------------------------------------------------------------------------
+	.about-me__title
+	{
+		@include rem(font-size, $h2Size);
+		text-align:center;
+
+		@include at-breakpoint($large-width)
+		{
+			text-align:left;
+		}
+	}
+
+	.about-me__img
+	{
+		@include rem(width, $doubleSpace * 5);
+		@include rem(margin, 0 auto $doubleSpace);
+		border:5px solid lighten($blueVeryDark, 10%);
+
+		> img { display: block; }
+
+		@include at-breakpoint($large-width)
+		{
+			float:left;
+			@include rem(margin-right, $doubleSpace);
+		}
+	}
+
+	.about-me__bd
+	{
+		@include at-breakpoint($large-width)
+		{
+			overflow:hidden;
+			_overflow:visible;
+			zoom:1;
+		}
+	}
+
+	.about-me__info
+	{
+		@include at-breakpoint($large-width)
+		{
+			@include rem(margin-bottom, $singleSpace);
+		}
+	}
+
+	.social
+	{
+		text-align:center;
+
+		@include at-breakpoint($large-width)
+		{
+			text-align:left;
+		}
+	}
+
+	.social__items
+	{
+		display:inline-block;
+	}
+
+	.social__item
+	{
+		@include rem(margin-right, $singleSpace);
+
+		&:last-child
+		{
+			margin-right:0;
+		}
+	}
+
+	.social__link-wrapper
+	{
+		display:inline-block;
+	}
+
+	.copyright
+	{
+		margin:0;
+		color:lighten($blueVeryDark, 10%);
+		text-align:center;
+	}
 
 	

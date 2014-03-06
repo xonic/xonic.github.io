@@ -7,6 +7,9 @@
 	
 	.l-header
 	{
+		border:$defaultBorder;
+		@include rem(border-bottom-width, $borderThin);
+
 		.grid 
 		{
 			border-color:transparent;
@@ -17,6 +20,11 @@
 			@include rem(padding-top, $doubleSpace);
 			@include rem(padding-bottom, $doubleSpace);
 		}
+	}
+
+	.home .l-header
+	{
+		border-color:transparent;
 	}
 
 
@@ -81,7 +89,7 @@
 	.no-touch .nav-main__link--active:hover
 	{
 		border:transparent;
-		color:$textColor;
+		color:$blueVeryDark;
 		cursor:default;
 	}
 

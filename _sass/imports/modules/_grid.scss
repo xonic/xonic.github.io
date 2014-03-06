@@ -185,12 +185,14 @@
 	.grid__inner
 	{
 		@include rem(padding-top, $singleSpace * 3);
+		@include rem(padding-bottom, $singleSpace * 3);
 		@include rem(font-size, $bodyFontSize);
 		line-height:1.5;
 
 		@include at-breakpoint($large-width)
 		{
 			@include rem(padding-top, $singleSpace * 5);
+			@include rem(padding-bottom, $singleSpace * 5);
 			line-height:1.8;
 		}
 	}
