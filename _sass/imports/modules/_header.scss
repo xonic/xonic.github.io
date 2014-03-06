@@ -7,11 +7,6 @@
 	
 	.l-header
 	{
-		// @include rem(padding, $singleSpace * 3 0);
-		// background:$secondaryAccent;
-		border:$defaultBorder;
-		@include rem(border-bottom-width, $borderThin);
-
 		.grid 
 		{
 			border-color:transparent;

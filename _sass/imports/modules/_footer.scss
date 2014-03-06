@@ -7,8 +7,6 @@
 	
 	.l-footer
 	{
-		border:$defaultBorder;
-		@include rem(border-top-width, $borderThin);
 		background:$blueVeryDark;
 		color:hsl(hue($blueVeryDark), 15%, 75%);
 

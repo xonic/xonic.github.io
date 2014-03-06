@@ -1,0 +1,33 @@
+//  ---------------------------------------------------------------------------
+//
+//  Hero module for sections with strong emphasis
+//
+//  ---------------------------------------------------------------------------
+
+	
+	.hero
+	{
+		background:$blueVeryDark;
+		color:$white;
+
+		.grid 
+		{
+			border-color:transparent;
+		}
+
+		.grid__inner
+		{
+			@include rem(padding-bottom, $singleSpace * 3);
+
+			@include at-breakpoint($large-width)
+			{
+				@include rem(padding-bottom, $singleSpace * 5);
+			}
+		}
+
+		.subtagline
+		{
+			margin-bottom:0;
+		}
+	}
+
