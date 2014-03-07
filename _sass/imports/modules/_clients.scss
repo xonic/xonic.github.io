@@ -1,0 +1,62 @@
+//  ---------------------------------------------------------------------------
+//
+//  Clients module, for work showcase
+//
+//  ---------------------------------------------------------------------------
+
+	.clients
+	{
+		@extend .cf;
+	}
+
+	.l-clients__item
+	{
+		@include rem(margin-bottom, $doubleSpace);
+		@include span-columns(2, $small-cols);
+		@include nth-omega(2n);
+
+		@include at-breakpoint($large-width)
+		{
+			&:nth-child(2n)
+			{
+				@include remove-omega($large-cols);
+			}
+
+			@include span-columns(1, 3);
+			@include nth-omega(3n);
+		}
+	}
+
+	.clients__logo
+	{
+		display:block;
+		@include rem(max-height, $doubleSpace * 4);
+		margin:0 auto;
+		opacity:.5;
+		@include filter(grayscale(100%));
+		@include transition(opacity .2 ease-in-out);
+	}
+
+	.touch .clients__logo:active,
+	.no-touch .clients__logo:hover
+	{
+		opacity:1;
+		@include filter(grayscale(0%));
+	}
+
+	// .touch .clients__item:active,
+	// .no-touch .clients__item:hover
+	// {
+	// 	@include filter(brightness(1));
+
+	// 	.clients__logo
+	// 	{
+	// 		@include filter(grayscale(0%));
+	// 	}
+	// }
+	
+
+
+
+
+	

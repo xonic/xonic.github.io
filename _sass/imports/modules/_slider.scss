@@ -54,6 +54,31 @@
 		{
 			@include rem(padding-top, $singleSpace * 5);
 		}
+
+		@include at-breakpoint($giant-width)
+		{
+			&:hover
+			{
+				.slider__controls
+				{
+					.slider__prev
+					{
+						opacity: 0;
+						@include transform(rotateZ(90deg));
+						pointer-events:none;
+						cursor:default;
+					}
+
+					.slider__next
+					{
+						opacity: 0;
+						@include transform(rotateZ(-90deg));
+						pointer-events:none;
+						cursor:default;
+					}
+				}
+			}
+		}
 	}
 
 	.slides,
