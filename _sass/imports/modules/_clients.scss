@@ -14,6 +14,8 @@
 		@include rem(margin-bottom, $doubleSpace);
 		@include span-columns(2, $small-cols);
 		@include nth-omega(2n);
+		opacity:.4;
+		@include transition(opacity .2s ease-in-out);
 
 		@include at-breakpoint($large-width)
 		{
@@ -32,15 +34,19 @@
 		display:block;
 		@include rem(max-height, $doubleSpace * 4);
 		margin:0 auto;
-		opacity:.5;
 		@include filter(grayscale(100%));
-		@include transition(opacity .2 ease-in-out);
+		@include transition(filter .2s ease-in-out);
+	}
+
+	.touch .l-clients__item:active,
+	.no-touch .l-clients__item:hover
+	{
+		opacity:1;
 	}
 
 	.touch .clients__logo:active,
 	.no-touch .clients__logo:hover
 	{
-		opacity:1;
 		@include filter(grayscale(0%));
 	}
 
