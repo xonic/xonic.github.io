@@ -1943,10 +1943,10 @@ img {
   margin-right: 5.17241%;
   display: inline;
   opacity: .4;
-  -webkit-transition: opacity 0.2s ease-in-out;
-  -moz-transition: opacity 0.2s ease-in-out;
-  -o-transition: opacity 0.2s ease-in-out;
-  transition: opacity 0.2s ease-in-out;
+  -webkit-transition: opacity 0.2s linear;
+  -moz-transition: opacity 0.2s linear;
+  -o-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
 }
 /* line 184, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_grid.scss */
 .l-clients__item:nth-child(2n) {
@@ -1981,10 +1981,10 @@ img {
   -webkit-filter: grayscale(100%);
   -moz-filter: grayscale(100%);
   filter: grayscale(100%);
-  -webkit-transition: filter 0.2s ease-in-out;
-  -moz-transition: filter 0.2s ease-in-out;
-  -o-transition: filter 0.2s ease-in-out;
-  transition: filter 0.2s ease-in-out;
+  -webkit-transition: filter 0.2s linear;
+  -moz-transition: filter 0.2s linear;
+  -o-transition: filter 0.2s linear;
+  transition: filter 0.2s linear;
 }
 
 /* line 43, ../_sass/imports/modules/_clients.scss */

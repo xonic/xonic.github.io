@@ -15,7 +15,7 @@
 		@include span-columns(2, $small-cols);
 		@include nth-omega(2n);
 		opacity:.4;
-		@include transition(opacity .2s ease-in-out);
+		@include transition(opacity .2s linear);
 
 		@include at-breakpoint($large-width)
 		{
@@ -35,7 +35,7 @@
 		@include rem(max-height, $doubleSpace * 4);
 		margin:0 auto;
 		@include filter(grayscale(100%));
-		@include transition(filter .2s ease-in-out);
+		@include transition(filter .2s linear);
 	}
 
 	.touch .l-clients__item:active,
@@ -49,17 +49,6 @@
 	{
 		@include filter(grayscale(0%));
 	}
-
-	// .touch .clients__item:active,
-	// .no-touch .clients__item:hover
-	// {
-	// 	@include filter(brightness(1));
-
-	// 	.clients__logo
-	// 	{
-	// 		@include filter(grayscale(0%));
-	// 	}
-	// }
 	
 
 
