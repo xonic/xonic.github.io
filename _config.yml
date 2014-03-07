@@ -6,6 +6,7 @@ pygments: true
 navigation:
 - text: Work
   url: /work/
+  real_url: /work/index.html
 - text: Articles
   url: /articles/
   real_url: /articles/index.html

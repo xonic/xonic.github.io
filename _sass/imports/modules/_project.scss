@@ -1,0 +1,63 @@
+//  ---------------------------------------------------------------------------
+//
+//  Project module, for work showcase
+//
+//  ---------------------------------------------------------------------------
+
+	.project__img-container
+	{
+		@include at-breakpoint($huge-width)
+		{
+			float:left;
+			width:50%;
+		}
+
+		@include at-breakpoint($giant-width)
+		{
+			float:none;
+			width:auto;
+		}
+	}
+
+
+	.project__img
+	{
+		@include rem(margin-bottom, $doubleSpace);
+
+		@include at-breakpoint($huge-width)
+		{
+			display:block;
+			@include rem(margin-right, $doubleSpace);
+		}
+
+		@include at-breakpoint($giant-width)
+		{
+			margin-right:0;
+		}
+	}
+
+	.project__bd
+	{
+		@include at-breakpoint($huge-width)
+		{
+			overflow:hidden;
+			_overflow:visible;
+			zoom:1;
+		}
+
+		@include at-breakpoint($giant-width)
+		{
+			overflow:visible;
+		}
+	}
+
+	.project__tasks
+	{
+		margin-left:0;
+	}
+	
+
+
+
+
+	

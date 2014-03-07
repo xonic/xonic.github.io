@@ -1,0 +1,41 @@
+//  ---------------------------------------------------------------------------
+//
+//  Defines the shared styles for sections
+//
+//  ---------------------------------------------------------------------------
+
+	
+//	= ALTERNATIVE SECTION
+//  ---------------------------------------------------------------------------
+
+	.section--alt
+	{
+		background:$blueVeryDark;
+		color:hsl(hue($blueVeryDark), 15%, 75%);
+
+		.grid 
+		{
+			border-color:transparent;
+		}
+
+		.subtagline
+		{
+			margin-bottom:0;
+			color:hsl(hue($blueVeryDark), 15%, 75%);
+		}
+	}
+
+	.touch .section--alt,
+	.no-touch .section--alt
+	{
+		a
+		{
+			border-bottom-color:lighten($blueVeryDark, 10%);
+		}
+	}
+
+	.touch .section--alt a:active,
+	.no-touch .section--alt a:hover
+	{
+		border-bottom-color:$linkColor;
+	}

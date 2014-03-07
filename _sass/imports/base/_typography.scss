@@ -98,11 +98,6 @@
 	    color:$white;
 	}
 
-	strong
-	{
-		font-weight:$boldFontWeight;
-	}
-
 	.blockquote
 	{
 		@include rem(margin, 0 0 $doubleSpace);
@@ -267,6 +262,21 @@
 		{
 			@include rem(margin-top, $doubleSpace * 2);
 		}
+	}
+
+
+
+//  = EMPHASIS
+//  ---------------------------------------------------------------------------
+
+	strong
+	{
+		font-weight:$boldFontWeight;
+	}
+
+	.highlighted
+	{
+		color:$blueLight;
 	}
 
 

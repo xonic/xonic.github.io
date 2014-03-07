@@ -2,60 +2,18 @@
 //
 //  SLIDER
 //	
-//	Horizontal Slider with native vertical scrolling capabilities. 
+//	Horizontal Slider with native scrolling. 
 //
 //	*IMPORTANT*
 //	You have to specify, how many images are in the slider at the bottom of
 //	this sass file. More instructions are at the bottom
-//
-//	Example slider with two images:
-//	
-//	HTML structure:
-//	<div class="slider-container space-lover">
-//		<h2>But perhaps some of our projects do.</h2>
-//		<div class="slider">
-//			<ul class="slides slides--contains-2">
-//				<li class="slide">
-//					<!-- First slide -->
-//					<img class="slide__img" src="/img/slider-carrotcake.jpg" alt="Carrot Cake">
-//					<div class="slide__caption">
-//						<h3>Carrot Cake</h3>
-//						<p>Contains carrots</p>
-//						<a href="http://www.flickr.com/photos/stevenbrisson/4248069302/">StevenBrisson on Flickr</a>
-//					</div>
-//				</li>
-//
-//				<li class="slide">
-//					<!-- second slide -->
-//					<img class="slide__img" src="/img/slider-madleines.jpg" alt="A1 workforce management screenshot">
-//					<div class="slide__caption">
-//						<h3>Piggy Madeleines</h3>
-//						<p>Small, piggy shaped madeleines.</p>
-//						<a href="http://www.flickr.com/photos/bananagranola/4312761345/">bananagranola on Flickr</a>
-//					</div>
-//				</li>
-//
-//			</ul>
-//		</div>
-//		<ul class="slider__controls slider__controls--is-start">
-//			<li>
-//				<a class="slider__prev" href="#">
-//					<i class="fa fa-chevron-left"></i>
-//				</a>
-//			</li>
-//			<li>
-//				<a class="slider__next" href="#">
-//					<i class="fa fa-chevron-right"></i>
-//				</a>
-//			</li>
-//		</ul>
-//	</div>
 //
 //  ---------------------------------------------------------------------------
 
 
 
 //	= COLORS
+//  ---------------------------------------------------------------------------
 
 	$baseColor:			$white;
 	$borderColor: 		#e9e0d3;
@@ -64,7 +22,10 @@
 //	= BREAKPOINTS
 //  ---------------------------------------------------------------------------
 
+	$sliderMedium:			48em;
 	$sliderLarge: 			$large-width;
+	$sliderHuge: 			$huge-width;
+	$sliderGiant: 			$giant-width;
 
 //	Special case to make the slider behave better on 1024px
 	$from-huge-width: 	64.0625em; // 1025px
@@ -83,8 +44,16 @@
 
 	.slider-container
 	{
+		position:relative;
+		overflow:hidden;
 		zoom:1;
-		position:relative
+
+		@include rem(padding-top, $singleSpace * 3);
+
+		@include at-breakpoint($large-width)
+		{
+			@include rem(padding-top, $singleSpace * 5);
+		}
 	}
 
 	.slides,
@@ -101,12 +70,12 @@
 //  ---------------------------------------------------------------------------
 	.slider 
 	{
-		
-		@include rem(margin-bottom, $singleSpace); 
-		// @include rem(padding, $singleSpace);
-		border:0 solid $borderColor;
-		@include rem(border-width, $borderThin);
-		background:$baseColor;
+		@include rem(padding, 0 $r-grid-padding $singleSpace * 3);
+
+		@include at-breakpoint($large-width)
+		{
+			@include rem(padding, 0 $r-grid-padding $singleSpace * 5);
+		}
 
 		overflow-x:scroll;
 		-webkit-overflow-scrolling:touch;
@@ -121,52 +90,16 @@
 		
 		// Prevents Metro from swiping to the next tab or app.
 		-ms-scroll-chaining: none;
-
-		// Breakpoints
-		@include at-breakpoint($sliderLarge)
-		{
-			// @include rem(padding, $doubleSpace);
-		}
 	}
 
 	.slides
 	{
 		@extend .cf;
-		@include rem(padding, $singleSpace/2);	
-
-		@include at-breakpoint($sliderLarge)
-		{
-			@include rem(padding, $singleSpace);	
-		}
 	}
 
 	.slide__img
 	{
-		width: 100%; 
 		display: block;
-	}
-
-	.slide__caption
-	{
-		@include rem(padding-top,$singleSpace);
-
-		// Breakpoints
-		@include at-breakpoint($sliderLarge no-mq)
-		{
-			@include rem(padding-top, $doubleSpace);
-		}
-
-		@include at-breakpoint($from-huge-width no-mq)
-		{
-			position:absolute;
-			@include rem(padding, $singleSpace);
-			width:45%;
-			top:auto;
-			right:auto;
-			@include rem(bottom, $doubleSpace);
-			@include rem(left, $doubleSpace);
-			background: rgba($baseColor, 0.7); /* Old browsers */
-		}
 	}
 
 
@@ -193,28 +126,29 @@
 		@include rem(width, $doubleSpace * 2);
 		@include rem(height, $doubleSpace * 2);
 		top: 50%;
+		@include rem(margin-top, - $doubleSpace - .5);
 		z-index:10;
 		cursor: pointer;
 		
-		@include setType($doubleSpace, $doubleSpace * 2);
+		@include setType($doubleSpace, $doubleSpace * 2 - .5);
 		text-align:center;
-		text-shadow: 0 1px 0 rgba(0, 0, 0, .25);
 
-		color: darken($baseColor, 4%);
-		background: rgba(darken($baseColor, 70%), .65);
+		color:$gold;
+		background:$white;
+		background:rgba($white, .95);
+		border:5px solid lighten($blueVeryDark, 10%);
 		zoom:1;
 
-		border-radius: 50%;
-		@include box-shadow(0 2px 3px rgba(0, 0, 0, .25));
-		@include transition(opacity .3s ease-in-out, left .3s ease-in-out, right .3s ease-in-out);
-		margin: 0 auto 1px;
-
 		opacity:0;
+
+		@include box-shadow(0 2px 3px rgba(0, 0, 0, .25));
+		@include transition(opacity .2s ease-in-out, border-color .2s ease-in-out, transform .2s ease-in-out);
 		
 		&:hover
 		{
-			background:rgba(darken($baseColor, 70%), .85);
-			opacity: 1;
+			
+			background:$white;
+			border-color:$gold;
 	  		zoom:1;
 		}
 
@@ -226,46 +160,33 @@
 
 	.slider__next
 	{
-		@include rem(right, -$singleSpace); 
+		@include rem(right, $r-grid-padding);
 
-		// Center Icons
-		.fa
-		{
-			@include rem(margin-left, .2); 
-		}
+		@include transform-origin(150% 50% 0);
+		@include transform(rotateZ(-90deg));
 	}
 
-	.slide__prev
+	.slider__prev
 	{
-		@include rem(left, -$singleSpace); 
-		
-		// Center Icons
-		.fa
-		{
-			@include rem(margin-left, -.2); 
-		}
+		@include rem(left, $r-grid-padding);
+
+		@include transform-origin(-150% 50% 0);
+		@include transform(rotateZ(90deg));
 	}
-
-
 
 //	HOVER STYLES OF SLIDER CONTROLS
-	.slider-container:hover {
-
-		.slider__next, 
-		.slider__prev
-		{
-
-			opacity: 0.8;
-		}	
-
+	.slider-container:hover
+	{
 		.slider__next
 		{
-			@include rem(right, $singleSpace);
+			opacity:1;
+			@include transform(rotateZ(0));
 		}
 
 		.slider__prev
 		{
-			@include rem(left, $singleSpace);
+			opacity:1;
+			@include transform(rotateZ(0));
 		}
 
 		.slider__controls--is-start 
@@ -273,8 +194,6 @@
 			.slider__prev
 			{
 				opacity: 0;
-
-				left: 0;
 				pointer-events:none;
 				cursor:default;
 			}
@@ -285,8 +204,6 @@
 			.slider__next
 			{
 				opacity: 0;
-
-				right: 0; 
 				pointer-events:none;
 				cursor:default;
 			}
@@ -310,9 +227,24 @@
 //	HOWEVER THE PREFIX CLASS NAME CAN ALSO BE GIVEN AS A SECOND PARAMETER
 //  ---------------------------------------------------------------------------
 	@include slider-items(3, "slides--contains");
-	
 
 
+	.slides--contains-3
+	{
+		@include at-breakpoint($sliderMedium)
+		{
+			width:140%;
+		}
+		
+		@include at-breakpoint($sliderHuge)
+		{
+			width:225%;
+		}
+		
+		@include at-breakpoint($sliderGiant)
+		{
+			width:100%;
+		}
+	}
 
 
-	

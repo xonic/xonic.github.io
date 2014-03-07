@@ -5,16 +5,8 @@
 //  ---------------------------------------------------------------------------
 
 	
-	.l-footer
+	.footer
 	{
-		background:$blueVeryDark;
-		color:hsl(hue($blueVeryDark), 15%, 75%);
-
-		.grid 
-		{
-			border-color:transparent;
-		}
-
 		.grid__inner
 		{
 			@include rem(padding-bottom, $singleSpace * 2);
@@ -25,21 +17,11 @@
 				@include rem(padding-bottom, $singleSpace * 3);
 			}
 		}
-	}
 
-	.touch .l-footer,
-	.no-touch .l-footer
-	{
-		a
+		.about-me__title
 		{
-			border-bottom-color:lighten($blueVeryDark, 10%);
+			@include rem(margin-bottom, $doubleSpace);
 		}
-	}
-
-	.touch .l-footer a:active,
-	.no-touch .l-footer a:hover
-	{
-		border-bottom-color:$linkColor;
 	}
 
 	.about-me
@@ -50,9 +32,6 @@
 
 	.about-me__title
 	{
-		@include rem(font-size, $h2Size);
-		text-align:center;
-
 		@include at-breakpoint($large-width)
 		{
 			text-align:left;
