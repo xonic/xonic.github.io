@@ -1889,14 +1889,14 @@ img {
 @media (min-width: 37.5em) {
   /* line 13, ../_sass/imports/modules/_clients.scss */
   .l-clients__item {
-    width: 28.65497%;
+    width: 31.07345%;
     float: left;
-    margin-right: 7.01754%;
+    margin-right: 3.38983%;
   }
-  /* line 23, ../_sass/imports/modules/_clients.scss */
+  /* line 251, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_grid.scss */
   .l-clients__item:nth-child(2n) {
     float: left;
-    margin-right: 2.52101%;
+    margin-right: 3.38983%;
   }
   /* line 184, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_grid.scss */
   .l-clients__item:nth-child(3n) {
@@ -1905,7 +1905,7 @@ img {
   }
 }
 
-/* line 33, ../_sass/imports/modules/_clients.scss */
+/* line 30, ../_sass/imports/modules/_clients.scss */
 .clients__logo {
   display: block;
   max-height:  96px;
@@ -1920,13 +1920,13 @@ img {
   transition: filter 0.2s linear;
 }
 
-/* line 43, ../_sass/imports/modules/_clients.scss */
+/* line 40, ../_sass/imports/modules/_clients.scss */
 .touch .l-clients__item:active,
 .no-touch .l-clients__item:hover {
   opacity: 1;
 }
 
-/* line 49, ../_sass/imports/modules/_clients.scss */
+/* line 46, ../_sass/imports/modules/_clients.scss */
 .touch .clients__logo:active,
 .no-touch .clients__logo:hover {
   -webkit-filter: grayscale(0%);

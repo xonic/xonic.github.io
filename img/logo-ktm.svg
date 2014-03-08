@@ -1,27 +1,15 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-<svg
-   xmlns:svg="http://www.w3.org/2000/svg"
-   xmlns="http://www.w3.org/2000/svg"
-   version="1.0"
-   width="779.52753"
-   height="305.65234"
-   id="svg4313">
-  <defs
-     id="defs4315" />
-  <g
-     transform="translate(-983.655,-90.09547)"
-     id="layer1">
-    <g
-       id="g11108">
-      <path
-         d="M 983.65498,395.74782 L 1763.1825,395.74782 L 1763.1825,90.095474 L 983.65498,90.095474 L 983.65498,395.74782 z "
-         style="fill:#f27620;fill-rule:nonzero;stroke:none;stroke-width:0.85000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none"
-         id="path10969" />
-      <path
-         d="M 1019.0881,353.21393 L 1118.1189,353.21393 L 1143.0128,292.36895 L 1188.8032,353.21393 L 1402.129,353.21393 L 1468.0891,291.76025 L 1457.0959,353.21393 L 1540.6812,353.21393 L 1609.6398,292.39624 L 1600.1905,353.21393 L 1690.3177,353.21393 L 1727.7495,183.55307 L 1637.1683,183.55307 L 1563.7584,248.24112 L 1577.9312,183.55307 L 1491.0753,183.55307 L 1396.314,278.51373 L 1435.9265,162.26597 L 1580.8386,162.26597 L 1587.4714,132.62936 L 1207.5192,132.62936 L 1196.3448,162.26597 L 1336.0779,162.26597 L 1277.2046,311.49371 L 1230.7782,250.49434 L 1311.0021,183.55307 L 1243.8611,183.55307 L 1161.5475,249.37683 L 1189.258,183.55307 L 1091.1353,183.55307 L 1019.0881,353.21393"
-         style="fill:#221f1f;fill-rule:nonzero;stroke:none;stroke-width:0.85000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none"
-         id="path10993" />
-    </g>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="svg4313" xmlns:svg="http://www.w3.org/2000/svg"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="300px" height="200px"
+	 viewBox="239.764 52.826 300 200" enable-background="new 239.764 52.826 300 200" xml:space="preserve">
+<g id="layer1" transform="translate(-983.655,-90.09547)">
+	<g id="g11108">
+		<path id="path10993" fill="#221F1F" d="M1265.609,276.48h30.132l7.574-18.514l13.932,18.514h64.907l20.069-18.698l-3.345,18.698
+			h25.432l20.981-18.505l-2.875,18.505h27.423l11.389-51.622h-27.561l-22.336,19.682l4.312-19.682h-26.427l-28.833,28.893
+			l12.053-35.37h44.092l2.018-9.018h-115.605l-3.4,9.018h42.516l-17.913,45.404l-14.126-18.56l24.409-20.368H1334l-25.045,20.028
+			l8.431-20.028h-29.855L1265.609,276.48"/>
+	</g>
+</g>
 </svg>
