@@ -1917,7 +1917,7 @@ img {
 pre,
 code {
   margin: 0;
-  font-family: "Menlo", "Monaco", "Consolas", "Courier New", monospace;
+  font-family: "droid-sans-mono", "Menlo", "Monaco", "Consolas", "Courier New", monospace;
   font-size:  14px;
   font-size:  1.4rem;
   line-height: 1.2;
