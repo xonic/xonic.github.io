@@ -1997,7 +1997,7 @@ pre {
 
 /* line 77, ../_sass/imports/modules/_syntax-highlight.scss */
 .highlight .c {
-  color: #999988;
+  color: #949494;
   font-style: italic;
 }
 
@@ -2011,55 +2011,53 @@ pre {
 /* Error */
 /* line 79, ../_sass/imports/modules/_syntax-highlight.scss */
 .highlight .k {
-  font-weight: bold;
+  color: #a67e4b;
 }
 
 /* Keyword */
 /* line 80, ../_sass/imports/modules/_syntax-highlight.scss */
 .highlight .o {
-  font-weight: bold;
+  color: #292929;
 }
 
 /* Operator */
 /* line 81, ../_sass/imports/modules/_syntax-highlight.scss */
 .highlight .cm {
-  color: #999988;
+  color: #949494;
   font-style: italic;
 }
 
 /* Comment.Multiline */
 /* line 82, ../_sass/imports/modules/_syntax-highlight.scss */
 .highlight .cp {
-  color: #999999;
-  font-weight: bold;
+  color: #949494;
 }
 
 /* Comment.Preproc */
 /* line 83, ../_sass/imports/modules/_syntax-highlight.scss */
 .highlight .c1 {
-  color: #999988;
+  color: #949494;
   font-style: italic;
 }
 
 /* Comment.Single */
 /* line 84, ../_sass/imports/modules/_syntax-highlight.scss */
 .highlight .cs {
-  color: #999999;
-  font-weight: bold;
+  color: #949494;
   font-style: italic;
 }
 
 /* Comment.Special */
 /* line 85, ../_sass/imports/modules/_syntax-highlight.scss */
 .highlight .gd {
-  color: #000000;
+  color: #292929;
   background-color: #ffdddd;
 }
 
 /* Generic.Deleted */
 /* line 86, ../_sass/imports/modules/_syntax-highlight.scss */
 .highlight .gd .x {
-  color: #000000;
+  color: #292929;
   background-color: #ffaaaa;
 }
 
@@ -2072,26 +2070,26 @@ pre {
 /* Generic.Emph */
 /* line 88, ../_sass/imports/modules/_syntax-highlight.scss */
 .highlight .gr {
-  color: #aa0000;
+  color: #be2e0b;
 }
 
 /* Generic.Error */
 /* line 89, ../_sass/imports/modules/_syntax-highlight.scss */
 .highlight .gh {
-  color: #999999;
+  color: #949494;
 }
 
 /* Generic.Heading */
 /* line 90, ../_sass/imports/modules/_syntax-highlight.scss */
 .highlight .gi {
-  color: #000000;
+  color: #292929;
   background-color: #ddffdd;
 }
 
 /* Generic.Inserted */
 /* line 91, ../_sass/imports/modules/_syntax-highlight.scss */
 .highlight .gi .x {
-  color: #000000;
+  color: #292929;
   background-color: #aaffaa;
 }
 
@@ -2110,7 +2108,7 @@ pre {
 /* Generic.Prompt */
 /* line 94, ../_sass/imports/modules/_syntax-highlight.scss */
 .highlight .gs {
-  font-weight: bold;
+  font-weight: black;
 }
 
 /* Generic.Strong */
@@ -2122,95 +2120,91 @@ pre {
 /* Generic.Subheading */
 /* line 96, ../_sass/imports/modules/_syntax-highlight.scss */
 .highlight .gt {
-  color: #aa0000;
+  color: #d6340c;
 }
 
 /* Generic.Traceback */
 /* line 97, ../_sass/imports/modules/_syntax-highlight.scss */
 .highlight .kc {
-  font-weight: bold;
+  color: #707070;
 }
 
 /* Keyword.Constant */
 /* line 98, ../_sass/imports/modules/_syntax-highlight.scss */
 .highlight .kd {
-  font-weight: bold;
+  color: #49b0e3;
 }
 
 /* Keyword.Declaration */
 /* line 99, ../_sass/imports/modules/_syntax-highlight.scss */
 .highlight .kp {
-  font-weight: bold;
+  color: #bb9769;
 }
 
 /* Keyword.Pseudo */
 /* line 100, ../_sass/imports/modules/_syntax-highlight.scss */
 .highlight .kr {
-  font-weight: bold;
+  color: #be2e0b;
 }
 
 /* Keyword.Reserved */
 /* line 101, ../_sass/imports/modules/_syntax-highlight.scss */
 .highlight .kt {
   color: #445588;
-  font-weight: bold;
 }
 
 /* Keyword.Type */
 /* line 102, ../_sass/imports/modules/_syntax-highlight.scss */
 .highlight .m {
-  color: #009999;
+  color: #849104;
 }
 
 /* Literal.Number */
 /* line 103, ../_sass/imports/modules/_syntax-highlight.scss */
 .highlight .s {
-  color: #dd1144;
+  color: #bb9769;
 }
 
 /* Literal.String */
 /* line 104, ../_sass/imports/modules/_syntax-highlight.scss */
 .highlight .na {
-  color: teal;
+  color: #49b0e3;
 }
 
 /* Name.Attribute */
 /* line 105, ../_sass/imports/modules/_syntax-highlight.scss */
 .highlight .nb {
-  color: #0086b3;
+  color: #9aaa05;
 }
 
 /* Name.Builtin */
 /* line 106, ../_sass/imports/modules/_syntax-highlight.scss */
 .highlight .nc {
-  color: #445588;
-  font-weight: bold;
+  color: #49b0e3;
 }
 
 /* Name.Class */
 /* line 107, ../_sass/imports/modules/_syntax-highlight.scss */
 .highlight .no {
-  color: teal;
+  color: #993399;
 }
 
 /* Name.Constant */
 /* line 108, ../_sass/imports/modules/_syntax-highlight.scss */
 .highlight .ni {
-  color: purple;
+  color: #be0bb1;
 }
 
 /* Name.Entity */
 /* line 109, ../_sass/imports/modules/_syntax-highlight.scss */
 .highlight .ne {
   color: #990000;
-  font-weight: bold;
 }
 
 /* Name.Exception */
 /* line 110, ../_sass/imports/modules/_syntax-highlight.scss */
 .highlight .nf {
   color: #990000;
-  font-weight: bold;
 }
 
 /* Name.Function */
@@ -2222,7 +2216,7 @@ pre {
 /* Name.Namespace */
 /* line 112, ../_sass/imports/modules/_syntax-highlight.scss */
 .highlight .nt {
-  color: navy;
+  color: #949494;
 }
 
 /* Name.Tag */
@@ -2232,11 +2226,6 @@ pre {
 }
 
 /* Name.Variable */
-/* line 114, ../_sass/imports/modules/_syntax-highlight.scss */
-.highlight .ow {
-  font-weight: bold;
-}
-
 /* Operator.Word */
 /* line 115, ../_sass/imports/modules/_syntax-highlight.scss */
 .highlight .w {
@@ -2288,7 +2277,7 @@ pre {
 /* Literal.String.Doc */
 /* line 123, ../_sass/imports/modules/_syntax-highlight.scss */
 .highlight .s2 {
-  color: #dd1144;
+  color: #bb9769;
 }
 
 /* Literal.String.Double */
@@ -2336,7 +2325,7 @@ pre {
 /* Literal.String.Symbol */
 /* line 131, ../_sass/imports/modules/_syntax-highlight.scss */
 .highlight .bp {
-  color: #999999;
+  color: #949494;
 }
 
 /* Name.Builtin.Pseudo */
