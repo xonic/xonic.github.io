@@ -1641,41 +1641,75 @@ img {
 
 /* line 97, ../_sass/imports/modules/_slider.scss */
 .slider {
-  padding:  0 15px 36px;
-  padding:  0 1.5rem 3.6rem;
+  margin-top:  36px;
+  margin-top:  3.6rem;
   overflow-x: scroll;
   -webkit-overflow-scrolling: touch;
   -ms-overflow-style: none;
   -ms-scroll-chaining: none;
 }
-@media (min-width: 37.5em) {
-  /* line 97, ../_sass/imports/modules/_slider.scss */
-  .slider {
-    padding:  0 15px 60px;
-    padding:  0 1.5rem 6rem;
-  }
-}
-/* line 109, ../_sass/imports/modules/_slider.scss */
+/* line 104, ../_sass/imports/modules/_slider.scss */
 .slider::-webkit-scrollbar {
   display: none;
 }
+@media (min-width: 37.5em) {
+  /* line 97, ../_sass/imports/modules/_slider.scss */
+  .slider {
+    margin-top:  60px;
+    margin-top:  6rem;
+  }
+}
 
-/* line 126, ../_sass/imports/modules/_slider.scss */
+/* line 121, ../_sass/imports/modules/_slider.scss */
+.slides {
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 131, ../_sass/imports/modules/_slider.scss */
+.slider .slides .slide {
+  position: relative;
+  margin-bottom:  -1200px;
+  margin-bottom:  -120rem;
+  padding-bottom:  1236px;
+  padding-bottom:  123.6rem;
+}
+/* line 137, ../_sass/imports/modules/_slider.scss */
+.slider .slides .slide:first-child {
+  background: #44484e;
+}
+/* line 142, ../_sass/imports/modules/_slider.scss */
+.slider .slides .slide:nth-child(2) {
+  background: #484d54;
+}
+/* line 147, ../_sass/imports/modules/_slider.scss */
+.slider .slides .slide:nth-child(3) {
+  background: #4d5259;
+}
+@media (min-width: 37.5em) {
+  /* line 131, ../_sass/imports/modules/_slider.scss */
+  .slider .slides .slide {
+    padding-bottom:  1260px;
+    padding-bottom:  126rem;
+  }
+}
+
+/* line 159, ../_sass/imports/modules/_slider.scss */
 .slide__img {
   display: block;
 }
 
-/* line 136, ../_sass/imports/modules/_slider.scss */
+/* line 169, ../_sass/imports/modules/_slider.scss */
 .slider__controls {
   *height: 0;
 }
-/* line 140, ../_sass/imports/modules/_slider.scss */
+/* line 173, ../_sass/imports/modules/_slider.scss */
 .slider__controls li {
   padding: 0;
   border: 0;
 }
 
-/* line 148, ../_sass/imports/modules/_slider.scss */
+/* line 181, ../_sass/imports/modules/_slider.scss */
 .slider__next,
 .slider__prev {
   display: block;
@@ -1708,20 +1742,20 @@ img {
   -o-transition: opacity 0.2s ease-in-out, border-color 0.2s ease-in-out, -o-transform 0.2s ease-in-out;
   transition: opacity 0.2s ease-in-out, border-color 0.2s ease-in-out, transform 0.2s ease-in-out;
 }
-/* line 173, ../_sass/imports/modules/_slider.scss */
+/* line 206, ../_sass/imports/modules/_slider.scss */
 .slider__next:hover,
 .slider__prev:hover {
   background: white;
   border-color: #bb9769;
   zoom: 1;
 }
-/* line 181, ../_sass/imports/modules/_slider.scss */
+/* line 214, ../_sass/imports/modules/_slider.scss */
 .slider__next .fa,
 .slider__prev .fa {
   line-height: inherit;
 }
 
-/* line 187, ../_sass/imports/modules/_slider.scss */
+/* line 220, ../_sass/imports/modules/_slider.scss */
 .slider__next {
   right:  15px;
   right:  1.5rem;
@@ -1737,7 +1771,7 @@ img {
   transform: rotateZ(-90deg);
 }
 
-/* line 195, ../_sass/imports/modules/_slider.scss */
+/* line 228, ../_sass/imports/modules/_slider.scss */
 .slider__prev {
   left:  15px;
   left:  1.5rem;
@@ -1753,7 +1787,7 @@ img {
   transform: rotateZ(90deg);
 }
 
-/* line 206, ../_sass/imports/modules/_slider.scss */
+/* line 239, ../_sass/imports/modules/_slider.scss */
 .slider-container:hover .slider__next {
   opacity: 1;
   -webkit-transform: rotateZ(0);
@@ -1762,7 +1796,7 @@ img {
   -o-transform: rotateZ(0);
   transform: rotateZ(0);
 }
-/* line 212, ../_sass/imports/modules/_slider.scss */
+/* line 245, ../_sass/imports/modules/_slider.scss */
 .slider-container:hover .slider__prev {
   opacity: 1;
   -webkit-transform: rotateZ(0);
@@ -1771,7 +1805,7 @@ img {
   -o-transform: rotateZ(0);
   transform: rotateZ(0);
 }
-/* line 220, ../_sass/imports/modules/_slider.scss */
+/* line 253, ../_sass/imports/modules/_slider.scss */
 .slider-container:hover .slider__controls--is-start .slider__prev {
   opacity: 0;
   -webkit-transform: rotateZ(90deg);
@@ -1782,7 +1816,7 @@ img {
   pointer-events: none;
   cursor: default;
 }
-/* line 231, ../_sass/imports/modules/_slider.scss */
+/* line 264, ../_sass/imports/modules/_slider.scss */
 .slider-container:hover .slider__controls--is-end .slider__next {
   opacity: 0;
   -webkit-transform: rotateZ(-90deg);
@@ -1794,7 +1828,7 @@ img {
   cursor: default;
 }
 
-/* line 245, ../_sass/imports/modules/_slider.scss */
+/* line 278, ../_sass/imports/modules/_slider.scss */
 .touch .slider__next,
 .touch .slider__prev {
   display: none;
@@ -1809,15 +1843,8 @@ img {
   position: relative;
   float: left;
   width: 100%;
-  padding:  12px;
-  padding:  1.2rem;
-}
-@media (min-width: 37.5em) {
-  /* line 429, ../_sass/imports/_mixins.scss */
-  .slides--contains-1 .slide {
-    padding:  24px;
-    padding:  2.4rem;
-  }
+  padding:  24px;
+  padding:  2.4rem;
 }
 
 /* line 406, ../_sass/imports/_mixins.scss */
@@ -1829,15 +1856,8 @@ img {
   position: relative;
   float: left;
   width: 50%;
-  padding:  12px;
-  padding:  1.2rem;
-}
-@media (min-width: 37.5em) {
-  /* line 429, ../_sass/imports/_mixins.scss */
-  .slides--contains-2 .slide {
-    padding:  24px;
-    padding:  2.4rem;
-  }
+  padding:  24px;
+  padding:  2.4rem;
 }
 
 /* line 406, ../_sass/imports/_mixins.scss */
@@ -1849,31 +1869,24 @@ img {
   position: relative;
   float: left;
   width: 33.33333%;
-  padding:  12px;
-  padding:  1.2rem;
-}
-@media (min-width: 37.5em) {
-  /* line 429, ../_sass/imports/_mixins.scss */
-  .slides--contains-3 .slide {
-    padding:  24px;
-    padding:  2.4rem;
-  }
+  padding:  24px;
+  padding:  2.4rem;
 }
 
 @media (min-width: 48em) {
-  /* line 260, ../_sass/imports/modules/_slider.scss */
+  /* line 293, ../_sass/imports/modules/_slider.scss */
   .slides--contains-3 {
     width: 140%;
   }
 }
 @media (min-width: 64em) {
-  /* line 260, ../_sass/imports/modules/_slider.scss */
+  /* line 293, ../_sass/imports/modules/_slider.scss */
   .slides--contains-3 {
     width: 225%;
   }
 }
 @media (min-width: 80em) {
-  /* line 260, ../_sass/imports/modules/_slider.scss */
+  /* line 293, ../_sass/imports/modules/_slider.scss */
   .slides--contains-3 {
     width: 100%;
   }

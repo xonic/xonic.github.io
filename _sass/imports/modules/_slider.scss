@@ -95,12 +95,7 @@
 //  ---------------------------------------------------------------------------
 	.slider 
 	{
-		@include rem(padding, 0 $r-grid-padding $singleSpace * 3);
-
-		@include at-breakpoint($large-width)
-		{
-			@include rem(padding, 0 $r-grid-padding $singleSpace * 5);
-		}
+		@include rem(margin-top, $singleSpace * 3);
 
 		overflow-x:scroll;
 		-webkit-overflow-scrolling:touch;
@@ -115,11 +110,49 @@
 		
 		// Prevents Metro from swiping to the next tab or app.
 		-ms-scroll-chaining: none;
+
+		@include at-breakpoint($large-width)
+		{
+			@include rem(margin-top, $singleSpace * 5);
+		}
 	}
 
 	.slides
 	{
 		@extend .cf;
+
+		position:relative;
+		overflow:hidden;
+	}
+
+	.slider .slides
+	{
+		.slide 
+		{
+			position:relative;
+			@include rem(margin-bottom, - $singleSpace * 100);
+			@include rem(padding-bottom, $singleSpace * 103);
+
+			&:first-child
+			{
+				background:lighten($blueVeryDark, 2%);
+			}
+
+			&:nth-child(2)
+			{
+				background:lighten($blueVeryDark, 4%);
+			}
+
+			&:nth-child(3)
+			{
+				background:lighten($blueVeryDark, 6%);
+			}
+
+			@include at-breakpoint($large-width)
+			{
+				@include rem(padding-bottom, $singleSpace * 105);
+			}
+		}
 	}
 
 	.slide__img

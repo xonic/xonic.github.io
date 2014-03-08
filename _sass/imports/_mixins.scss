@@ -430,12 +430,7 @@
 		position: relative;
 		float:left;
 		width: #{100 / $slideCount + "%"};
-		@include rem(padding, $singleSpace);	
-
-		@include at-breakpoint($large-width)
-		{
-			@include rem(padding, $doubleSpace);	
-		}
+		@include rem(padding, $doubleSpace);
 	}
 }
 
