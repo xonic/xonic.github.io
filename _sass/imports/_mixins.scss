@@ -423,7 +423,7 @@
 
 @mixin slider-items-inner($slideCount)
 {
-	width: #{$slideCount * 100 - 25 + "%"};
+	width: #{$slideCount * 100 - 35 + "%"};
 
 	.slide
 	{

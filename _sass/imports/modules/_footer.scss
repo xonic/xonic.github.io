@@ -38,19 +38,23 @@
 		}
 	}
 
-	.about-me__img
+	.about-me__img-container
 	{
 		@include rem(width, $doubleSpace * 5);
 		@include rem(margin, 0 auto $doubleSpace);
-		border:5px solid lighten($blueVeryDark, 10%);
-
-		> img { display: block; }
 
 		@include at-breakpoint($large-width)
 		{
 			float:left;
 			@include rem(margin-right, $doubleSpace);
 		}
+	}
+
+	.about-me__img
+	{
+		display:block;
+		// @include rem(margin-bottom, $singleSpace);
+		border:5px solid lighten($blueVeryDark, 10%);
 	}
 
 	.about-me__bd
@@ -99,6 +103,17 @@
 	.social__link-wrapper
 	{
 		display:inline-block;
+	}
+
+	.about-me__hire
+	{
+		@include at-breakpoint(48em)
+		{
+			@include rem(width, $singleSpace * 10);
+			text-align:left;
+
+			> a { display:block; }
+		}
 	}
 
 	.copyright
