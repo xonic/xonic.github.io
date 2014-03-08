@@ -2004,8 +2004,7 @@ pre {
 /* Comment */
 /* line 78, ../_sass/imports/modules/_syntax-highlight.scss */
 .highlight .err {
-  color: #a61717;
-  background-color: #e3d2d2;
+  color: #49b0e3;
 }
 
 /* Error */
@@ -2186,7 +2185,7 @@ pre {
 /* Name.Class */
 /* line 107, ../_sass/imports/modules/_syntax-highlight.scss */
 .highlight .no {
-  color: #993399;
+  color: #9aaa05;
 }
 
 /* Name.Constant */
@@ -2216,16 +2215,21 @@ pre {
 /* Name.Namespace */
 /* line 112, ../_sass/imports/modules/_syntax-highlight.scss */
 .highlight .nt {
-  color: #949494;
+  color: #49b0e3;
 }
 
 /* Name.Tag */
 /* line 113, ../_sass/imports/modules/_syntax-highlight.scss */
 .highlight .nv {
-  color: teal;
+  color: #49b0e3;
 }
 
 /* Name.Variable */
+/* line 114, ../_sass/imports/modules/_syntax-highlight.scss */
+.highlight .ow {
+  color: #be2e0b;
+}
+
 /* Operator.Word */
 /* line 115, ../_sass/imports/modules/_syntax-highlight.scss */
 .highlight .w {
@@ -2295,7 +2299,7 @@ pre {
 /* Literal.String.Heredoc */
 /* line 126, ../_sass/imports/modules/_syntax-highlight.scss */
 .highlight .si {
-  color: #dd1144;
+  color: #292929;
 }
 
 /* Literal.String.Interpol */
