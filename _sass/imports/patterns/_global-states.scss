@@ -94,6 +94,7 @@
 	}
 
 
+
 //  ---------------------------------------------------------------------------
 //
 //  This class is for text elements that are not so important and
@@ -106,24 +107,32 @@
 		color:$gray !important;
 	}
 
+	.text--small
+	{
+		font-size:85%;
+	}
+
+
+
 //  ---------------------------------------------------------------------------
 //
 //  Alignment Classes - left - center - right
 //
 //  ---------------------------------------------------------------------------		
 
-
-	.text-left
+	.text--left
 	{
 		text-align:left;
 	}
 
-	.text-center
+	.text--center
 	{
 		text-align:center;
 	}
 
-	.text-right
+	.text--right
 	{
 		text-align:right;
 	}
+
+
