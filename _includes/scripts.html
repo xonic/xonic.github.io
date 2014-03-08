@@ -1,6 +1,35 @@
 <!-- RequireJS -->
-<script src="../js/require.js"></script>
+<script src="{{ page.relative }}js/require.js"></script>
 <script>
+
+  requirejs.config(
+  {
+    paths:
+    {
+      // Libraries
+      'jquery'          : '{{ page.relative }}js/vendor/jquery-1.10.2',
+      'modernizr'         : '{{ page.relative }}js/vendor/modernizr',
+      'selectivizr'       : '{{ page.relative }}js/vendor/customized/selectivizr',
+
+      // Custom modules
+      'slider'          : '{{ page.relative }}js/modules/Slider'
+    },
+
+    shim:
+    {
+      // Since it's not require-jquery.js
+      // we need to shim it.
+      'jquery':
+      {
+        exports: '$'
+      },
+
+      'modernizr':
+      {
+        exports: 'Modernizr'
+      }
+    }
+  });
   // Load common code for all pages
-  require(['../js/common.js']);
+  require(['{{ page.relative }}js/common.js']);
 </script>

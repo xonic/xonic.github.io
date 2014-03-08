@@ -48,13 +48,6 @@
 		overflow:hidden;
 		zoom:1;
 
-		@include rem(padding-top, $singleSpace * 3);
-
-		@include at-breakpoint($large-width)
-		{
-			@include rem(padding-top, $singleSpace * 5);
-		}
-
 		@include at-breakpoint($giant-width)
 		{
 			&:hover

@@ -12,16 +12,34 @@
 	{
 		background:$blueVeryDark;
 		color:hsl(hue($blueVeryDark), 15%, 75%);
+		@include rem(padding-top, $singleSpace * 3);
+
+		@include at-breakpoint($large-width)
+		{
+			@include rem(padding-top, $singleSpace * 5);
+		}
 
 		.grid 
 		{
 			border-color:transparent;
 		}
 
+		// .grid__inner
+		// {
+		// 	padding-top:0;
+		// 	padding-bottom:0;
+		// }
+
 		.subtagline
 		{
 			margin-bottom:0;
+			@include rem(padding-bottom, $singleSpace * 3);
 			color:hsl(hue($blueVeryDark), 15%, 75%);
+
+			@include at-breakpoint($large-width)
+			{
+				@include rem(padding-bottom, $singleSpace * 5);
+			}
 		}
 	}
 

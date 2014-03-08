@@ -1,35 +1,43 @@
 ---
-layout: default
+layout: home
 title: xon1c · thoughts
 styles: index
 script: index
 ---
 
-  <ol class="list">
+<div class="section--alt">
+  <h1 class="subtagline">Things I say</h1>
+</div>
 
-    {% for post in site.posts %}
+<div class="grid">
+  <div class="grid__inner">
+    <ol class="list">
 
-      <li>
+      {% for post in site.posts %}
 
-        <time datetime="{{ post.date }}">
+        <li>
 
-          <!-- Whitespace added for readability -->
-          {% assign d = post.date | date: "%-d"  %}
-          {{ post.date | date: "%B" }} 
-          {% case d %}
-            {% when '1' or '21' or '31' %}{{ d }}st, 
-            {% when '2' or '22' %}{{ d }}nd, 
-            {% when '3' or '23' %}{{ d }}rd, 
-            {% else %}{{ d }}th, 
-            {% endcase %}
-          {{ post.date | date: "%Y" }}
+          <time datetime="{{ post.date }}">
 
-        </time>
-        
-        <h2><a href="{{ post.url }}" title="read article">{{ post.title }}</a></h2>
+            <!-- Whitespace added for readability -->
+            {% assign d = post.date | date: "%-d"  %}
+            {{ post.date | date: "%B" }} 
+            {% case d %}
+              {% when '1' or '21' or '31' %}{{ d }}st, 
+              {% when '2' or '22' %}{{ d }}nd, 
+              {% when '3' or '23' %}{{ d }}rd, 
+              {% else %}{{ d }}th, 
+              {% endcase %}
+            {{ post.date | date: "%Y" }}
 
-      </li>
+          </time>
+          
+          <h2><a href="{{ post.url }}" title="read article">{{ post.title }}</a></h2>
 
-    {% endfor %}
+        </li>
 
-  </ol>
+      {% endfor %}
+
+    </ol>
+  </div>
+</div>

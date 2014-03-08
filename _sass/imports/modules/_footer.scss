@@ -9,6 +9,7 @@
 	{
 		.grid__inner
 		{
+			padding-top:0;
 			@include rem(padding-bottom, $singleSpace * 2);
 			@include rem(font-size, $smallFontSize);
 
@@ -21,6 +22,7 @@
 		.about-me__title
 		{
 			@include rem(margin-bottom, $doubleSpace);
+			padding-bottom:0;
 		}
 	}
 

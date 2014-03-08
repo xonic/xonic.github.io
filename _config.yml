@@ -2,6 +2,9 @@ name: xon1c · Thomas Nägele's thoughts and work
 markdown: redcarpet
 pygments: true
 
+# Setup permalinks
+permalink: /articles/:title/
+
 # Setup page navigation
 navigation:
 - text: Work
