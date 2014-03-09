@@ -1833,6 +1833,10 @@ img {
     _overflow: visible;
     zoom: 1;
   }
+  /* line 48, ../_sass/imports/modules/_project.scss */
+  .project__bd > a {
+    display: inline-block;
+  }
 }
 @media (min-width: 80em) {
   /* line 40, ../_sass/imports/modules/_project.scss */
@@ -1841,7 +1845,7 @@ img {
   }
 }
 
-/* line 55, ../_sass/imports/modules/_project.scss */
+/* line 60, ../_sass/imports/modules/_project.scss */
 .project__tasks {
   margin-left: 0;
 }

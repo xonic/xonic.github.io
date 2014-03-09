@@ -43,6 +43,11 @@
 			overflow:hidden;
 			_overflow:visible;
 			zoom:1;
+
+			> a 
+			{
+				display:inline-block;
+			}
 		}
 
 		@include at-breakpoint($giant-width)
