@@ -85,9 +85,10 @@
 
 	.msg__title
 	{
-		@extend .h4;
-		margin-bottom:0;
-		// @include rem(margin-bottom, $singleSpace);
+		@include rem(margin-bottom, $singleSpace);
+		font-family:$headingsFontFamily;
+		font-weight:$headingsFontWeight;
+		@include setType($h4Size, $h4LineHeight);
 
 		.fa 
 		{
@@ -102,7 +103,7 @@
 
 	.msg--has-icon .msg__bd
 	{
-		@include rem(margin-left, 2.7 + $singleSpace / 2); // 27px is the width of fixed-width fontawesome icons
+		@include rem(margin-left, 3);
 	}
 
 

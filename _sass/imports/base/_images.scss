@@ -21,7 +21,7 @@
 		border:$defaultBorder;
 		border-top-width:1px;
 		border-bottom-width:1px;
-		background:$whiteSmoke;
+		background: hsl(hue($linkColor), 10%, 97%);
 
 		img 
 		{

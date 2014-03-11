@@ -950,7 +950,7 @@ img {
   border: 0 dashed #dbdbdb;
   border-top-width: 1px;
   border-bottom-width: 1px;
-  background: whitesmoke;
+  background: #f8f7f7;
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
@@ -2361,6 +2361,78 @@ pre {
 }
 
 /* Literal.Number.Integer.Long */
+/* line 73, ../_sass/imports/modules/_msg.scss */
+.msg {
+  margin-bottom:  22.0px;
+  margin-bottom:  2.2rem;
+  padding:  12px;
+  padding:  1.2rem;
+  background: white;
+  border: 0 solid #d9d9d9;
+  border-width:  1px;
+  border-width:  0.1rem;
+  border-radius:  4px;
+  border-radius:  0.4rem;
+  font-family: "freight-sans-pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  color: #404040;
+}
+
+/* line 87, ../_sass/imports/modules/_msg.scss */
+.msg__title {
+  margin-bottom:  12px;
+  margin-bottom:  1.2rem;
+  font-family: "bree-serif", "Georgia", "Geneva", "Times New Roman", serif;
+  font-weight: 400;
+  font-size:  18px;
+  font-size:  1.8rem;
+  line-height:  24px;
+  line-height:  2.4rem;
+}
+/* line 94, ../_sass/imports/modules/_msg.scss */
+.msg__title .fa {
+  margin-right:  6px;
+  margin-right:  0.6rem;
+}
+
+/* line 100, ../_sass/imports/modules/_msg.scss */
+.msg__bd {
+  margin-bottom: 0;
+}
+
+/* line 105, ../_sass/imports/modules/_msg.scss */
+.msg--has-icon .msg__bd {
+  margin-left:  30px;
+  margin-left:  3rem;
+}
+
+/* line 115, ../_sass/imports/modules/_msg.scss */
+.msg--info {
+  background: #e0e9f5;
+  border-color: #b3c7e6;
+  color: #1f447a;
+}
+
+/* line 127, ../_sass/imports/modules/_msg.scss */
+.msg--success {
+  background: #e9f0a8;
+  border-color: #bdcc33;
+  color: #545c0a;
+}
+
+/* line 139, ../_sass/imports/modules/_msg.scss */
+.msg--warning {
+  background: #fdeeb4;
+  border-color: #d6bd5c;
+  color: #6c5a13;
+}
+
+/* line 151, ../_sass/imports/modules/_msg.scss */
+.msg--error {
+  background: #fdcfc3;
+  border-color: #d99b8c;
+  color: #822c17;
+}
+
 /* line 11, ../_sass/imports/modules/_footer.scss */
 .footer .grid__inner {
   padding-top: 0;
