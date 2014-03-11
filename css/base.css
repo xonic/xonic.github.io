@@ -583,17 +583,22 @@ table {
   font-size: 85%;
 }
 
-/* line 124, ../_sass/imports/patterns/_global-states.scss */
+/* line 116, ../_sass/imports/patterns/_global-states.scss */
+.redacted {
+  text-decoration: line-through;
+}
+
+/* line 129, ../_sass/imports/patterns/_global-states.scss */
 .text--left {
   text-align: left;
 }
 
-/* line 129, ../_sass/imports/patterns/_global-states.scss */
+/* line 134, ../_sass/imports/patterns/_global-states.scss */
 .text--center {
   text-align: center;
 }
 
-/* line 134, ../_sass/imports/patterns/_global-states.scss */
+/* line 139, ../_sass/imports/patterns/_global-states.scss */
 .text--right {
   text-align: right;
 }
