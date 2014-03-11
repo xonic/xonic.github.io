@@ -1,0 +1,49 @@
+//  ---------------------------------------------------------------------------
+//
+//  Testimonials
+//
+//  ---------------------------------------------------------------------------
+
+	$testimonialLarge: 48em;
+	$testimonialBackground: hsl(hue($linkColor), 10%, 97%);
+
+	.l-testimonials
+	{
+		@extend .cf;
+	}
+
+	.l-testimonial
+	{
+		@include at-breakpoint($testimonialLarge)
+		{
+			@include span-columns(4, $large-cols);
+			@include nth-omega(2n);
+		}
+	}
+
+	.testimonial__quote
+	{
+		position:relative;
+		@include rem(padding, $singleSpace / 2 $singleSpace);
+		background:$testimonialBackground;
+		border-radius:8px;
+
+		&:after
+		{
+			content:" ";
+			position:absolute;
+			top:100%;
+			left:20%;
+			height:0;
+			width:0;
+			border:solid transparent;
+			border-top-color:$testimonialBackground;
+			border-width: 20px;
+			pointer-events:none;
+		}
+	}
+
+	.testimonial__source
+	{
+		@include rem(padding, 0 $singleSpace);
+	}

@@ -456,12 +456,13 @@ table {
 }
 
 /* line 25, ../_sass/imports/patterns/_clearfix.scss */
-.cf:before, .tiles:before, .nav-main:before, .slides:before, .clients:before, .about-me:before,
+.cf:before, .tiles:before, .nav-main:before, .slides:before, .clients:before, .l-testimonials:before, .about-me:before,
 .cf:after,
 .tiles:after,
 .nav-main:after,
 .slides:after,
 .clients:after,
+.l-testimonials:after,
 .about-me:after {
   content: " ";
   /* 1 */
@@ -470,12 +471,12 @@ table {
 }
 
 /* line 30, ../_sass/imports/patterns/_clearfix.scss */
-.cf:after, .tiles:after, .nav-main:after, .slides:after, .clients:after, .about-me:after {
+.cf:after, .tiles:after, .nav-main:after, .slides:after, .clients:after, .l-testimonials:after, .about-me:after {
   clear: both;
 }
 
 /* line 34, ../_sass/imports/patterns/_clearfix.scss */
-.cf, .tiles, .nav-main, .slides, .clients, .about-me {
+.cf, .tiles, .nav-main, .slides, .clients, .l-testimonials, .about-me {
   *zoom: 1;
   /* 3 */
 }
@@ -2436,6 +2437,48 @@ pre {
   background: #fdcfc3;
   border-color: #d99b8c;
   color: #822c17;
+}
+
+@media (min-width: 48em) {
+  /* line 16, ../_sass/imports/modules/_testimonial.scss */
+  .l-testimonial {
+    width: 48.7395%;
+    float: left;
+    margin-right: 2.52101%;
+  }
+  /* line 184, ../../../../../../../Library/Ruby/Gems/2.0.0/gems/susy-1.0.9/sass/susy/_grid.scss */
+  .l-testimonial:nth-child(2n) {
+    float: right;
+    margin-right: 0;
+  }
+}
+
+/* line 25, ../_sass/imports/modules/_testimonial.scss */
+.testimonial__quote {
+  position: relative;
+  padding:  6px 12px;
+  padding:  0.6rem 1.2rem;
+  background: #f8f7f7;
+  border-radius: 8px;
+}
+/* line 32, ../_sass/imports/modules/_testimonial.scss */
+.testimonial__quote:after {
+  content: " ";
+  position: absolute;
+  top: 100%;
+  left: 20%;
+  height: 0;
+  width: 0;
+  border: solid transparent;
+  border-top-color: #f8f7f7;
+  border-width: 20px;
+  pointer-events: none;
+}
+
+/* line 47, ../_sass/imports/modules/_testimonial.scss */
+.testimonial__source {
+  padding:  0 12px;
+  padding:  0 1.2rem;
 }
 
 /* line 11, ../_sass/imports/modules/_footer.scss */
