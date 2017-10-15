@@ -24,7 +24,7 @@ $grid-breakpoints: (
 
 $container-max-widths: (
   md: 640px,
-  lg: 922px, 
+  lg: 922px,
   xl: 1204px
 );
 
@@ -63,28 +63,43 @@ $link-hover-decoration:      underline;
 //
 // Settings for the `<body>` element.
 
-$body-bg:                    $gray-lightest;
-$body-color:                 $gray-dark;
+$body-bg:                    #fff;
+$body-color:                 #0f0f0f;
+
+// Spacing
+//
+// Different spaces for all the things
+
+$space10:                    .4rem;
+$space20:                    $space10 * 2;
+$space30:                    $space10 * 3;
+$space40:                    $space10 * 4;
+$space50:                    $space10 * 6;
+$space60:                    $space50 * 2;
+$space70:                    $space50 * 3;
+$space80:                    $space50 * 3;
+
+
 
 // Typography
 //
 // Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:     -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-$font-family-serif:          Georgia, "Times New Roman", Times, serif;
+$font-family-sans-serif:     "proxima-nova", BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+$font-family-serif:          "freight-sans-condensed-pro", Georgia, "Times New Roman", Times, serif;
 $font-family-monospace:      Menlo, Monaco, Consolas, "Courier New", monospace;
 
 $font-family-base:           $font-family-sans-serif;
 
-$font-size-root:             16px;
-$font-size-base:             1rem;
+$font-size-root:             62.5%;
+$font-size-base:             calc(1.5rem + .3125vw);
+$font-size-small:            .707em;
 $line-height:                1.5;
 
-$font-size-h1:               2.5rem;       //40px
-$font-size-h2:               2rem;         //32px
-$font-size-h3:               1.75rem;      //28px
-$font-size-h4:               1.5rem;       //24px
-$font-size-h5:               1.125rem;     //18px
+$font-size-h1:               2.441em;
+$font-size-h2:               1.953em;
+$font-size-h3:               1.563em;
+$font-size-h4:               1.25em;
 
 
 // Misc Shared
@@ -97,4 +112,3 @@ $border-radius:               .25rem;      //4px
 // Components
 //
 // Variables related to specific elements
-

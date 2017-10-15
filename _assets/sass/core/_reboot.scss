@@ -96,9 +96,20 @@ body {
 // By default, `<h1>`-`<h6>` all receive top and bottom margins. We nuke the top
 // margin for easier control within type scales as it avoids margin collapsing.
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 0;
-  margin-bottom: .5rem;
+  font-family: $font-family-serif;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-top: calc(4.7rem + .25vw);
+  margin-bottom: calc(1.5rem + .25vw);
 }
+
+h1 { font-size: $font-size-h1; }
+
+h2 { font-size: $font-size-h2; }
+
+h3 { font-size: $font-size-h3; }
+
+h4 { font-size: $font-size-h4; }
 
 // Reset margins on paragraphs
 //
@@ -106,7 +117,7 @@ h1, h2, h3, h4, h5, h6 {
 // bottom margin to use `rem` units instead of `em`.
 p {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: $space50;
 }
 
 // Abbreviations and acronyms
@@ -197,6 +208,7 @@ img {
   // By default, `<img>`s are `inline-block`. This assumes that, and vertically
   // centers them. This won't apply should you reset them to `block` level.
   vertical-align: middle;
+  max-width: 100%;
   // Note: `<img>`s are deliberately not made responsive by default.
   // For the rationale behind this, see the comments on the `.img-fluid` class.
 }

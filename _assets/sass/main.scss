@@ -20,14 +20,17 @@
 // partials directly tied to an element
 //--------------------
 
-//@import "components/header"
+
+@import "components/wrapper";
+@import "components/grid";
+@import "components/header";
 
 //--------------------
 // PAGES
 // styles for specific page configurations
 //--------------------
 
-//@import "pages/home"
+@import "pages/home";
 
 //--------------------
 // VENDOR STYLES

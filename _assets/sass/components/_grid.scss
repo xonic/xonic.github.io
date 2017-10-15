@@ -1,0 +1,13 @@
+/* Page Grid Component */
+
+.grid {
+  @media(min-width: #{map-get($grid-breakpoints, "md")}) {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: $space40;
+    grid-row-gap: 5vw;
+  }
+
+  @media(min-width: $wrapper-max-with) {
+  }
+}

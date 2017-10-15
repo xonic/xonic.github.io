@@ -1,1 +1,23 @@
 /* Home Page */
+
+.intro,
+.service {
+    grid-column: 3 / 11;
+}
+
+.creed {
+    grid-column: 6 / 12;
+    grid-row: 2 / 3;
+    z-index: 1;
+    margin: $space60 0;
+    padding: $space60;
+    background: #72868A;
+    font-size: 1.8em;
+    font-weight: 700;
+    color:#fff;
+}
+
+.pic--tom {
+    grid-column: 1 / 8;
+    grid-row: 2 / 3;
+}

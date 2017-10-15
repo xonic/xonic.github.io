@@ -1,1 +1,43 @@
 /* Header Component */
+
+.header {
+  margin: $space40 0;
+  .wrapper {
+    display: flex;
+    align-items: flex-end;
+  }
+}
+
+.logo {
+  // margin: $space50 auto;
+  max-width: 5rem;
+
+  @media (min-width: map-get($grid-breakpoints, "md")) {
+    margin: $space60 auto;
+    max-width: 10rem;
+  }
+}
+
+.nav__items {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__item {
+  margin-left: $space10;
+
+  &:first-child {
+    margin-left: $space20;
+  }
+}
+
+.nav__link {
+  padding: $space10;
+  // font-size: $font-size-small;
+  text-transform: uppercase;
+  font-weight: bold;
+  white-space: nowrap;
+}

@@ -1,0 +1,25 @@
+<div class="header">
+  <div class="wrapper">
+    <div class="logo">
+      <img alt="logo" src="{{ site.baseurl }}/assets/images/logo.svg">
+    </div>
+    <nav class="nav">
+      <ul class="nav__items">
+        {% for link in site.navigation %}
+
+          {% assign current = nil %}
+
+          {% if page.url == link.url %}
+
+            {% assign current = 'nav__link--active' %}
+
+          {% endif %}
+
+          <li class="nav__item">
+            <a class="nav__link {{ current }}" href="{{ link.url }}">{{ link.text }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+</div>

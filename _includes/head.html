@@ -12,11 +12,13 @@
   {% else %}
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | prepend: site.baseurl }}">
   {% endif %}
-  
+
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-  
+
   {% feed_meta %}
 
   <!-- Modernizr Feature Tests -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+  <script src="https://use.typekit.net/bmr4bdn.js"></script>
+  <script>try{Typekit.load({ async: true });}catch(e){}</script>
 </head>
