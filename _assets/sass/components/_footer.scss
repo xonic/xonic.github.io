@@ -1,0 +1,19 @@
+/* Header Component */
+
+.footer {
+    position: relative;
+    margin-top: $space80;
+    padding: $space80 0;
+    background: #DB3737;
+    color: #fff;
+
+    &:before {
+        content: " ";
+        position: absolute;
+        bottom: calc(100% - 2vw);
+        width: 100%;
+        height: 4vw;
+        background: $brand-red;
+        transform: skew(0, 2deg);
+    }
+}
