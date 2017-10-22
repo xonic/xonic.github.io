@@ -37,31 +37,9 @@
     }
 }
 
-.pic--tom {
+.portrait {
     grid-column: 1 / 8;
     grid-row: 2 / 3;
-    position: relative;
-    overflow: hidden;
-    // animation: wiggle 20s infinite alternate;
-
-    &:before,
-    &:after {
-        content: " ";
-        position: absolute;
-        top: 0;
-        width: 5em;
-        height: 101%;
-        background: #fff;
-        transform: skew(7deg);
-    }
-
-    &:before {
-        left: -2.5em;
-    }
-
-    &:after {
-        right: -2.5em;
-    }
 }
 
 @keyframes floating {

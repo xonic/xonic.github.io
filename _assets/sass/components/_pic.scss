@@ -1,0 +1,31 @@
+/* Skew Masked Pic Component */
+
+.pic {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+
+  img {
+    display: block;
+    width: 100%;
+  }
+
+  &:before,
+  &:after {
+    content: " ";
+    position: absolute;
+    top: -5%;
+    height: 110%;
+    width: 10%;
+    background: white;
+    transform: skew(7deg);
+  }
+
+  &:before {
+   left: -5%;
+  }
+
+  &:after {
+    right: -5%;
+  }
+}
