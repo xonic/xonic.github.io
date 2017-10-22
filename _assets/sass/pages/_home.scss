@@ -2,8 +2,26 @@
 
 .intro,
 .service,
-.feedback {
-    grid-column: 3 / 11;
+.feedback,
+.discover,
+.define,
+.develop,
+.deliver,
+.verify,
+.hire {
+    grid-column: 2 / 11;
+
+    @media (min-width: #{map-get($grid-breakpoints, "lg")}) {
+        grid-column: 3 / 10
+    }
+
+    @media (min-width: #{map-get($grid-breakpoints, "xl")}) {
+        grid-column: 4 / 10;
+    }
+
+    @media (min-width: #{map-get($grid-breakpoints, "xxl")}) {
+        grid-column: 3 / 10;
+    }
 }
 
 .creed {

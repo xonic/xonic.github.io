@@ -16,16 +16,16 @@
     position: absolute;
     top: -5%;
     height: 110%;
-    width: 10%;
+    width: 13%;
     background: white;
-    transform: skew(7deg);
+    transform: skew(3deg);
   }
 
   &:before {
-   left: -5%;
+   left: -6.5%;
   }
 
   &:after {
-    right: -5%;
+    right: -6.5%;
   }
 }

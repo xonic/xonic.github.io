@@ -15,7 +15,9 @@ $grid-breakpoints: (
   // Large screen / desktop
   lg: 1000px,
   // Extra large screen / wide desktop
-  xl: 1268px
+  xl: 1268px,
+  // Extra large screen / wide desktop
+  xxl: 1920px
 );
 
 // Grid containers
@@ -48,7 +50,7 @@ $gray-lighter:              #eceeef;
 $gray-lightest:             #f7f7f9;
 
 $brand-red:                 #fc4e4e;
-$brand-green:               #99c432;
+$brand-blue:                #3F6AEB;
 
 // Links
 //

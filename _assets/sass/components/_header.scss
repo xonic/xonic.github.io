@@ -20,7 +20,7 @@
   max-width: 5rem;
 
   @media (min-width: map-get($grid-breakpoints, "md")) {
-    grid-column: 3 / 5;
+    grid-column: 4 / 5;
     max-width: 10rem;
   }
 }

@@ -1,0 +1,26 @@
+/* Button Component */
+
+.btn {
+    position: relative;
+    display: block;
+    overflow: hidden;
+    padding: $space40 $space80;
+    background: $brand-blue;
+    box-shadow: 4px 4px 0 black;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: white;
+    text-align: center;
+    transform: skew(3deg);
+
+    &:hover {
+        background: lighten($brand-blue, 8%);
+        color: white;
+        text-decoration: none;
+    }
+
+    > * {
+        display: block;
+        transform: skew(-3deg);
+    }
+}

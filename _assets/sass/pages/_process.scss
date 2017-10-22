@@ -1,0 +1,97 @@
+/* Process Page */
+
+// .intro {
+//     grid-column: 2 / 11;
+//
+//     @media (min-width: #{map-get($grid-breakpoints, "lg")}) {
+//         grid-column: 3 / 10
+//     }
+//
+//     @media (min-width: #{map-get($grid-breakpoints, "xl")}) {
+//         grid-column: 2 / 10;
+//     }
+//
+//     @media (min-width: #{map-get($grid-breakpoints, "xxl")}) {
+//         grid-column: 3 / 10;
+//     }
+// }
+
+.discover {
+    grid-column: 2 / 11;
+
+    @media (min-width: #{map-get($grid-breakpoints, "lg")}) {
+        grid-column: 3 / 10
+    }
+
+    @media (min-width: #{map-get($grid-breakpoints, "xl")}) {
+        grid-column: 1 / 6;
+    }
+
+    @media (min-width: #{map-get($grid-breakpoints, "xxl")}) {
+        grid-column: 3 / 10;
+    }
+}
+
+.define {
+    grid-column: 2 / 11;
+
+    @media (min-width: #{map-get($grid-breakpoints, "lg")}) {
+        grid-column: 3 / 10
+    }
+
+    @media (min-width: #{map-get($grid-breakpoints, "xl")}) {
+        grid-column: 7 / 12;
+    }
+
+    @media (min-width: #{map-get($grid-breakpoints, "xxl")}) {
+        grid-column: 3 / 10;
+    }
+}
+
+.develop {
+    grid-column: 2 / 11;
+
+    @media (min-width: #{map-get($grid-breakpoints, "lg")}) {
+        grid-column: 3 / 10
+    }
+
+    @media (min-width: #{map-get($grid-breakpoints, "xl")}) {
+        grid-column: 1 / 6;
+    }
+
+    @media (min-width: #{map-get($grid-breakpoints, "xxl")}) {
+        grid-column: 3 / 10;
+    }
+}
+
+.deliver {
+    grid-column: 2 / 11;
+
+    @media (min-width: #{map-get($grid-breakpoints, "lg")}) {
+        grid-column: 3 / 10
+    }
+
+    @media (min-width: #{map-get($grid-breakpoints, "xl")}) {
+        grid-column: 7 / 12;
+    }
+
+    @media (min-width: #{map-get($grid-breakpoints, "xxl")}) {
+        grid-column: 3 / 10;
+    }
+}
+
+.verify {
+    grid-column: 2 / 11;
+
+    @media (min-width: #{map-get($grid-breakpoints, "lg")}) {
+        grid-column: 3 / 10
+    }
+
+    @media (min-width: #{map-get($grid-breakpoints, "xl")}) {
+        grid-column: 1 / 6;
+    }
+
+    @media (min-width: #{map-get($grid-breakpoints, "xxl")}) {
+        grid-column: 3 / 10;
+    }
+}
