@@ -36,7 +36,7 @@
     font-size: 1.8em;
     font-weight: 700;
     color:#fff;
-    transform: skew(7deg);
+    transform: skew(3deg);
 
     &:after {
         content: " ";
@@ -51,7 +51,7 @@
 
     > p {
         margin: 0;
-        transform: skew(-7deg);
+        transform: skew(-3deg);
     }
 }
 
