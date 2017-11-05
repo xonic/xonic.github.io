@@ -1,31 +1,44 @@
 /* Skew Masked Pic Component */
 
 .pic {
-  position: relative;
-  display: inline-block;
-  overflow: hidden;
+    display: inline-block;
+    position: relative;
+    margin-bottom: calc(2.3rem + .25vw);
+}
 
-  img {
-    display: block;
-    width: 100%;
-  }
+.pic__img {
+    clip-path: polygon(0 0, 96% 0, 100% 100%, 4% 100%);
+}
 
-  &:before,
-  &:after {
-    content: " ";
-    position: absolute;
-    top: -5%;
-    height: 110%;
-    width: 13%;
-    background: white;
+.pic__caption {
+    display: inline-block;
+    margin-top: calc(-7.1rem - .25vw);
+    margin-bottom: calc(2.3rem + .25vw);
+    padding: $space60;
+    background: $brand-red;
+    font-size: 1.6em;
+    font-weight: 700;
+    color:#fff;
     transform: skew(3deg);
-  }
 
-  &:before {
-   left: -6.5%;
-  }
+    &:after {
+        content: " ";
+        position: absolute;
+        top: .5em;
+        left: .5em;
+        width: 100%;
+        height: 100%;
+        border: 4px solid #000;
+        // animation: floating 15s infinite alternate;
+    }
 
-  &:after {
-    right: -6.5%;
-  }
+    > p {
+        margin: 0;
+        transform: skew(-3deg);
+    }
+
+    @media(min-width: #{map-get($grid-breakpoints, "md")}) {
+        position: absolute;
+        margin: -30% -5%;
+    }
 }

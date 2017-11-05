@@ -1,0 +1,46 @@
+/* Skew Heading Component */
+
+.special-heading {
+    margin-bottom: calc(3.1rem + .25vw);
+    padding: 0 0 $space40;
+    border-bottom: 4px solid $brand-red;
+}
+
+// .pic--is-floating {
+//
+//     @media(min-width: #{map-get($grid-breakpoints, "md")}) {
+//         float: right;
+//         margin: 0 -50% $space60 $space60;
+//         width: 100%;
+//     }
+// }
+
+// .pic {
+//   position: relative;
+//   display: inline-block;
+//   overflow: hidden;
+//
+//   img {
+//     display: block;
+//     width: 100%;
+//   }
+//
+//   &:before,
+//   &:after {
+//     content: " ";
+//     position: absolute;
+//     top: -5%;
+//     height: 110%;
+//     width: 13%;
+//     background: white;
+//     transform: skew(3deg);
+//   }
+//
+//   &:before {
+//    left: -6.5%;
+//   }
+//
+//   &:after {
+//     right: -6.5%;
+//   }
+// }

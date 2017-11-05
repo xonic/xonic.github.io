@@ -99,8 +99,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $font-family-serif;
   font-weight: 700;
   line-height: 1.2;
-  margin-top: calc(4.7rem + .25vw);
-  margin-bottom: calc(4.7rem + .25vw);
+  margin: 0 0 calc(4.7rem + .25vw);
 }
 
 h1 { font-size: $font-size-h1; }
