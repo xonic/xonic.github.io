@@ -72,15 +72,14 @@ $body-color:                 #0f0f0f;
 //
 // Different spaces for all the things
 
-$space10:                    .4rem;
-$space20:                    $space10 * 2;
-$space30:                    $space10 * 3;
-$space40:                    $space10 * 4;
-$space50:                    $space10 * 6;
-$space60:                    $space50 * 2;
-$space70:                    $space50 * 3;
-$space80:                    $space50 * 3;
-
+$space10:                    calc(.5625rem + .1171875vw);
+$space20:                    calc(#{.5625rem * 2} + #{.1171875vw * 2});
+$space30:                    calc(#{.5625rem * 3} + #{.1171875vw * 3});
+$space40:                    calc(#{.5625rem * 4} + #{.1171875vw * 4});
+$space50:                    calc(#{.5625rem * 6} + #{.1171875vw * 6});
+$space60:                    calc(#{.5625rem * 12} + #{.1171875vw * 12});
+$space70:                    calc(#{.5625rem * 18} + #{.1171875vw * 18});
+$space80:                    calc(#{.5625rem * 24} + #{.1171875vw * 24});
 
 
 // Typography

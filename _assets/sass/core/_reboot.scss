@@ -99,7 +99,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $font-family-serif;
   font-weight: 700;
   line-height: 1.2;
-  margin: 0 0 calc(4.7rem + .25vw);
+  margin: 0 0 calc(2.25rem + .46875vw);
 }
 
 h1 { font-size: $font-size-h1; }
@@ -116,7 +116,7 @@ h4 { font-size: $font-size-h4; }
 // bottom margin to use `rem` units instead of `em`.
 p {
   margin-top: 0;
-  margin-bottom: calc(2.3rem + .25vw);
+  margin-bottom: $space40;
 }
 
 // Abbreviations and acronyms
