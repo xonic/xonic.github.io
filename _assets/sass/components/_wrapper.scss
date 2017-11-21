@@ -1,10 +1,10 @@
 /* Page Wrapper Component */
 
-$wrapper-max-with: 160rem;
+$wrapper-max-with: 144rem;
 
 .wrapper {
   margin: 0 auto;
-  padding: 0 3.75vw;
+  padding: 0 $space30;
   max-width: $wrapper-max-with;
 
   @media(min-width: #{map-get($grid-breakpoints, "md")}) {
@@ -17,6 +17,10 @@ $wrapper-max-with: 160rem;
 }
 
 .main {
-    padding: $space60 0;
+    padding: $space70 0 $space40;
     overflow: hidden;
+
+    @media (min-width: map-get($grid-breakpoints, "md")) {
+        padding: $space80 0 $space40;;
+    }
 }

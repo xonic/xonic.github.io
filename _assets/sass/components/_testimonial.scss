@@ -13,7 +13,7 @@
 .testimonial {
     display: flex;
     align-items: flex-start;
-    margin-bottom: calc(4.7rem + .25vw);
+    margin-bottom: $space60;
 }
 
 .testimonial__pic {

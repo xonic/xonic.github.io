@@ -5,7 +5,7 @@
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     grid-column-gap: $space40;
-    grid-row-gap: calc(4.7rem + .25vw);
+    grid-row-gap: $space60;
   }
 
   @media(min-width: $wrapper-max-with) {

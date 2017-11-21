@@ -72,14 +72,16 @@ $body-color:                 #0f0f0f;
 //
 // Different spaces for all the things
 
-$space10:                    calc(.5625rem + .1171875vw);
-$space20:                    calc(#{.5625rem * 2} + #{.1171875vw * 2});
-$space30:                    calc(#{.5625rem * 3} + #{.1171875vw * 3});
-$space40:                    calc(#{.5625rem * 4} + #{.1171875vw * 4});
-$space50:                    calc(#{.5625rem * 6} + #{.1171875vw * 6});
-$space60:                    calc(#{.5625rem * 12} + #{.1171875vw * 12});
-$space70:                    calc(#{.5625rem * 18} + #{.1171875vw * 18});
-$space80:                    calc(#{.5625rem * 24} + #{.1171875vw * 24});
+$space:                      .4rem;
+
+$space10:                    calc(#{ $space * 1  - .1} + .3125vw);
+$space20:                    calc(#{ $space * 2  - .1} + .3125vw);
+$space30:                    calc(#{ $space * 3  - .1} + .3125vw);
+$space40:                    calc(#{ $space * 4  - .1} + .3125vw);
+$space50:                    calc(#{ $space * 6  - .1} + .3125vw);
+$space60:                    calc(#{ $space * 12 - .1} + .3125vw);
+$space70:                    calc(#{ $space * 18 - .1} + .3125vw);
+$space80:                    calc(#{ $space * 24 - .1} + .3125vw);
 
 
 // Typography
@@ -101,6 +103,8 @@ $font-size-h1:               2.441em;
 $font-size-h2:               1.953em;
 $font-size-h3:               1.563em;
 $font-size-h4:               1.25em;
+
+$bold-font-weight:           700;
 
 
 // Misc Shared

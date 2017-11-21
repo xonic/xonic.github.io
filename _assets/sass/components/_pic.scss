@@ -3,7 +3,7 @@
 .pic {
     display: inline-block;
     position: relative;
-    margin-bottom: calc(2.3rem + .25vw);
+    margin-bottom: $space50;
 }
 
 .pic__img {
@@ -13,11 +13,11 @@
 .pic__caption {
     display: inline-block;
     margin-top: calc(-7.1rem - .25vw);
-    margin-bottom: calc(2.3rem + .25vw);
-    padding: $space60;
+    margin-bottom: $space40;
+    padding: $space50;
     background: $brand-red;
-    font-size: 1.6em;
-    font-weight: 700;
+    font-size: $font-size-h4;
+    font-weight: $bold-font-weight;
     color:#fff;
     transform: skew(3deg);
 
@@ -39,6 +39,8 @@
 
     @media(min-width: #{map-get($grid-breakpoints, "md")}) {
         position: absolute;
-        margin: -30% -5%;
+        top: 100%;
+        left: 0;
+        margin: -25% -5%;
     }
 }
