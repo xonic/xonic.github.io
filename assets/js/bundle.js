@@ -44,11 +44,15 @@
 /* 0 */
 /***/ (function(module, exports) {
 
-	'use strict';
+	"use strict";
 
-	//import FontFaceObserver from 'fontfaceobserver';
+	// Add this event listener to prevent mobile safari
+	// from disabling the ::active pseudo class
+	document.addEventListener("touchstart", function () {});
 
-	console.log('JS is up and running!');
+	// Deobfuscate email address
+	var links = $(".js-deobfuscate");
+	links.attr("href", links.attr("href").split("(at)").join("@"));
 
 /***/ })
 /******/ ]);
