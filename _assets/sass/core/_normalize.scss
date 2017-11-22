@@ -430,3 +430,22 @@ td,
 th {
   padding: 0;
 }
+
+// xon1c: Custom Typography
+// ==========================================================================
+
+.teaser {
+    font-size: $font-size-h4;
+}
+
+.heading--small {
+    font-size: $font-size-base;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.text--small {
+    font-size: $font-size-small;
+    line-height: 1.5;
+    color: #808080;
+}

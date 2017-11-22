@@ -1,6 +1,7 @@
 <footer class="footer">
   <div class="wrapper">
     <section class="experience">
+    <h1 class="heading--small">Companies I made happy</h1>
     <ul class="clients">
         <li class="client">
             <img class="logo--zalando" src="{{ site.baseurl }}/assets/images/logo--zalando.svg" alt="">
@@ -28,7 +29,16 @@
         </li>
     </ul>
     </section>
-    <section class="contact">contact</section>
+    <hr class="footer__separator">
+    <section class="contact">
+        <h1 class="heading--small">Where to find me</h1>
+        <ul class="social">
+            <li class="social__item"><a href="https://twitter.com/xon1c" target="_blank" class="social__link"><img class="social__img" src="{{ site.baseurl }}/assets/images/logo--twitter.svg" alt="Twitter Logo"></a></li>
+            <li class="social__item"><a href="https://www.linkedin.com/in/thomas-nägele-448681b6" target="_blank" class="social__link"><img class="social__img" src="{{ site.baseurl }}/assets/images/logo--linkedin.svg" alt="LinkedIn Logo"></a></li>
+            <li class="social__item"><a href="https://www.xing.com/profile/Thomas_Naegele8" target="_blank" class="social__link"><img class="social__img" src="{{ site.baseurl }}/assets/images/logo--xing.svg" alt="Xing Logo"></a></li>
+            <li class="social__item"><a href="https://github/xonic" target="_blank" class="social__link"><img class="social__img" src="{{ site.baseurl }}/assets/images/logo--github.svg" alt="GitHub Logo"></a></li>
+        </ul>
+    </section>
   </div>
 
   {% if jekyll.environment == "production" %}
@@ -39,7 +49,7 @@
       (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
       m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-XXXXXXX-X', 'auto');
+  ga('create', 'UA-48822836-1', 'auto');
   ga('send', 'pageview');
   </script>
 

@@ -8,7 +8,12 @@
 .develop,
 .deliver,
 .verify,
-.hire {
+.hire,
+.research,
+.ixd,
+.visual-design,
+.soft-skills,
+.education {
     grid-column: 2 / 11;
 
     @media (min-width: #{map-get($grid-breakpoints, "lg")}) {

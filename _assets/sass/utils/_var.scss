@@ -88,8 +88,8 @@ $space80:                    calc(#{ $space * 24 - .1} + .3125vw);
 //
 // Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:     "proxima-nova", BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
-$font-family-serif:          "freight-sans-condensed-pro", Georgia, "Times New Roman", Times, serif;
+$font-family-sans-serif:     "proxima-nova", sans-serif;
+$font-family-serif:          "freight-sans-condensed-pro", sans-serif;
 $font-family-monospace:      Menlo, Monaco, Consolas, "Courier New", monospace;
 
 $font-family-base:           $font-family-sans-serif;

@@ -23,4 +23,8 @@ $wrapper-max-with: 144rem;
     @media (min-width: map-get($grid-breakpoints, "md")) {
         padding: $space80 0 $space40;;
     }
+
+    @media (min-width: map-get($grid-breakpoints, "lg")) {
+        padding: $space80 0 $space70;;
+    }
 }
