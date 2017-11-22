@@ -51,8 +51,8 @@
 	document.addEventListener("touchstart", function () {});
 
 	// Deobfuscate email address
-	var links = $(".js-deobfuscate");
-	links.attr("href", links.attr("href").split("(at)").join("@"));
+	// var links = $(".js-deobfuscate");
+	// links.attr("href", links.attr("href").split("(at)").join("@"));
 
 /***/ })
 /******/ ]);
