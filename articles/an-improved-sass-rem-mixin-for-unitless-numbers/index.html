@@ -1,5 +1,24 @@
-<p>Since we started using Sass in our projects here at intuio, our workflow has improved a lot. There are a lot of useful mixins out there, let alone the comprehensive compass mixins library. Given the fact that most of our projects are to be designed responsive, we do only use relative sizing units. While ‘em’ units can cause a lot of headache because it’s up to you to always calculate the desired values, ‘rem’ units are a great relief for every designer.</p><p>As <a href="http://snook.ca/archives/html_and_css/font-size-with-rem" title="View article">Jonathan Snook explained before</a>, using ‘rem’ with a ‘px’ fallback is perfectly fine for all major browsers (including IE8) and there is a <a href="http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/" title="View article">nice mixin for setting the font-size</a> by Chris Coyier. Heck, there’s even a <a href="https://gist.github.com/1134548" title="View article">very similar mixin</a> published by bitmanic but none of these perfectly fit our needs. We love to work with unitless variables, which is why I created (yet) another mixin that covers just that coding style. Lets dig into some code…</p><h2 id="assumptions">Assumptions</h2><p>There are a couple of assumptions:</p><ul><li>You use unitless numbers</li><li>Your html font-size is set to 62.5%</li></ul><figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nv">$htmlFontSize</span><span class="p">:</span> <span class="m">62</span><span class="mi">.5%</span><span class="p">;</span> <span class="c1">// Set the font-size to 10px
-</span><span class="nv">$bodyFontSize</span><span class="p">:</span> <span class="m">1</span><span class="mi">.6</span><span class="p">;</span> <span class="o">//</span> <span class="nt">Unitless</span> <span class="nt">number</span><span class="o">,</span> <span class="nt">equals</span> <span class="nt">16px</span></code></pre></figure><h2 id="the-mixin">The @mixin</h2><p>So far so good, now let’s look at the mixin.</p><figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="c1">// Mixin that allows to specify arbitrary CSS properties with
+<p>Since we started using Sass in our projects here at intuio, our workflow has improved a lot. There are a lot of useful mixins out there, let alone the comprehensive compass mixins library. Given the fact that most of our projects are to be designed responsive, we do only use relative sizing units. While ‘em’ units can cause a lot of headache because it’s up to you to always calculate the desired values, ‘rem’ units are a great relief for every designer.</p>
+
+<p>As <a href="http://snook.ca/archives/html_and_css/font-size-with-rem" title="View article">Jonathan Snook explained before</a>, using ‘rem’ with a ‘px’ fallback is perfectly fine for all major browsers (including IE8) and there is a <a href="http://css-tricks.com/snippets/css/less-mixin-for-rem-font-sizing/" title="View article">nice mixin for setting the font-size</a> by Chris Coyier. Heck, there’s even a <a href="https://gist.github.com/1134548" title="View article">very similar mixin</a> published by bitmanic but none of these perfectly fit our needs. We love to work with unitless variables, which is why I created (yet) another mixin that covers just that coding style. Lets dig into some code…</p>
+
+<h2 id="assumptions">Assumptions</h2>
+
+<p>There are a couple of assumptions:</p>
+
+<ul>
+  <li>You use unitless numbers</li>
+  <li>Your html font-size is set to 62.5%</li>
+</ul>
+
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nv">$htmlFontSize</span><span class="p">:</span> <span class="m">62</span><span class="mi">.5%</span><span class="p">;</span> <span class="c1">// Set the font-size to 10px
+</span><span class="nv">$bodyFontSize</span><span class="p">:</span> <span class="m">1</span><span class="mi">.6</span><span class="p">;</span> <span class="o">//</span> <span class="nt">Unitless</span> <span class="nt">number</span><span class="o">,</span> <span class="nt">equals</span> <span class="nt">16px</span></code></pre></figure>
+
+<h2 id="the-mixin">The @mixin</h2>
+
+<p>So far so good, now let’s look at the mixin.</p>
+
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="c1">// Mixin that allows to specify arbitrary CSS properties with
 // unitless numbers. The output has rem unit with pixel fallback.
 // Shorthand assignments are supported too!
 </span><span class="nv">$base_line</span><span class="p">:</span> <span class="m">10</span><span class="p">;</span>
@@ -33,7 +52,11 @@
   <span class="c1">// Output the CSS property in pixels and rems
 </span>  <span class="si">#{</span><span class="nv">$property</span><span class="si">}</span><span class="nd">:</span><span class="err">$</span><span class="nt">shorthand_px</span><span class="p">;</span>
   <span class="si">#{</span><span class="nv">$property</span><span class="si">}</span><span class="nd">:</span><span class="err">$</span><span class="nt">shorthand_rem</span><span class="p">;</span>
-<span class="p">}</span></code></pre></figure><h2 id="usage">Usage</h2><figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nt">body</span>
+<span class="p">}</span></code></pre></figure>
+
+<h2 id="usage">Usage</h2>
+
+<figure class="highlight"><pre><code class="language-scss" data-lang="scss"><span class="nt">body</span>
 <span class="p">{</span>
   <span class="k">@include</span> <span class="nd">rem</span><span class="p">(</span><span class="n">font-size</span><span class="o">,</span> <span class="nv">$bodyFontSize</span><span class="p">);</span>
   <span class="k">@include</span> <span class="nd">rem</span><span class="p">(</span><span class="n">padding</span><span class="o">,</span> <span class="m">0</span> <span class="nv">$bodyFontSize</span><span class="p">);</span>
@@ -42,7 +65,11 @@
 <span class="nc">.wrapper</span>
 <span class="p">{</span>
   <span class="k">@include</span> <span class="nd">rem</span><span class="p">(</span><span class="n">margin</span><span class="o">,</span> <span class="m">0</span> <span class="nb">auto</span> <span class="nv">$bodyFontSize</span><span class="p">);</span>
-<span class="p">}</span></code></pre></figure><h2 id="output">Output</h2><figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">body</span>
+<span class="p">}</span></code></pre></figure>
+
+<h2 id="output">Output</h2>
+
+<figure class="highlight"><pre><code class="language-css" data-lang="css"><span class="nt">body</span>
 <span class="p">{</span>
   <span class="nl">font-size</span><span class="p">:</span><span class="m">16px</span><span class="p">;</span>
   <span class="nl">font-size</span><span class="p">:</span><span class="m">1.6rem</span><span class="p">;</span>
@@ -55,4 +82,8 @@
 <span class="p">{</span>
   <span class="nl">margin</span><span class="p">:</span><span class="m">0</span> <span class="nb">auto</span> <span class="m">16px</span><span class="p">;</span>
   <span class="nl">margin</span><span class="p">:</span><span class="m">0</span> <span class="nb">auto</span> <span class="m">1.6rem</span><span class="p">;</span>
-<span class="p">}</span></code></pre></figure><h2 id="conclusion">Conclusion</h2><p>So, if you’re working with unitless number as we do, this little mixin might come in handy. I am sure there is room for improvement and I would love to hear any suggestions. Happy coding!</p>
+<span class="p">}</span></code></pre></figure>
+
+<h2 id="conclusion">Conclusion</h2>
+
+<p>So, if you’re working with unitless number as we do, this little mixin might come in handy. I am sure there is room for improvement and I would love to hear any suggestions. Happy coding!</p>
